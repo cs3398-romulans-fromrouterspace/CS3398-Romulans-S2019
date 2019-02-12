@@ -1,28 +1,26 @@
-/* Class Manager.  Supposed to a subset of Worker.  
+/* 
 
-Open-Close Principle: if we added a new position to basic worker,
-such as Manager or Auditor, we could simply extend existing code, rather than
-modifying the Worker class itself.
+Class Manager
 
-Inteface Segragation:  The manager class would have tasks specific to the duties
-of management, rather than just cramming manager methods into the Worker class,
-which non-manager workers would not use.
+Open-Close Principle: Assume that we've created the Worker class before
+the Manager class.  At the start, we didn't know we'd need a Manager class.
+Rather than modify existing code, we simply added NEW code to the program.
 
-Single Responsibility:  the developer-oriented counterpart to Interface
-Segregation.  Again, the Manager class would focus exlusively on managerial
-duties and the programmed implementations of those duties.
+Inteface Segragation:  The Manager design didn't simply cram managerial duties 
+into the Worker class.  The respective duties are separated.
+
+Single Responsibility:  A Worker object will not use manage().  Only the 
+Manager class will use the method manage().  It is better to have several 
+focused classes, rather than a few catch-all classes.
 
 */
 
 package threesolid;
 
 public class Manager {
-	IWorker worker;
+	Workable worker;
 
-	public void Manager() {
-
-	}
-	public void setWorker(IWorker w) {
+	public void setWorker(Workable w) {
 		worker=w;
 	}
 
