@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Reveal Bootstrap Template</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Reveal
+    Theme URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body id="body">
+
+<!--==========================
+  Top Bar
+============================-->
+<!--<section id="topbar" class="d-none d-lg-block">-->
+  <!--<div class="container clearfix">-->
+    <!--<div class="contact-info float-left">-->
+      <!--<i class="fa fa-envelope-o"></i> <a href="mailto:contact@example.com">contact@example.com</a>-->
+      <!--<i class="fa fa-phone"></i> +1 5589 55488 55-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</section>-->
+
+<!--==========================
+  Header
+============================-->
+<header id="header">
+  <div class="container">
+
+    <div id="logo" class="pull-left">
+      <h1>
+        <%= link_to root_path do %>
+          Team<span>Sort</span>
+        <% end %>
+      </h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
+    </div>
+
+    <nav id="nav-menu-container">
+      <ul class="nav-menu">
+        <!-- /.dropdown -->
+        <li class="menu-has-children"><a href=""><i class="fa fa-user fa-fw"></i></a>
+          <ul>
+            <li>
+              <%= link_to edit_user_registration_path do %>
+                <i class="fa fa-gear fa-fw"></i> Edit Account
+              <% end %>
+            </li>
+            <li>
+              <%= link_to destroy_user_session_path, method: :delete do %>
+                <i class="fa fa-sign-out fa-fw"></i> Logout
+              <% end %>
+            </li>
+          </ul>
+        </li>
+        <!-- /.dropdown -->
+      </ul>
+    </nav><!-- #nav-menu-container -->
+  </div>
+</header><!-- #header -->
+
+<main id="main">
+
+  <!--<section id="contact" class="wow fadeInUp">-->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Dashboard</h2>
+        <% if current_user.admin %>
+        <p>Manage your classes here. Distribute the unique sign up code to your students and run the sorting algorithm after they
+        have all registered. You may re-sort as many times as you like.</p>
+        <% else %>
+        <p></p>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="container">
+      <% if current_user.admin %>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                Manage Groups
+              </div>
+              <!-- /.panel-heading -->
+              <div class="panel-body">
+                <div class="table-responsive">
+                  <table class="table table-hover">
+                    <thead>
+                    <tr>
+                      <th>Title</th>
+                      <th>Sign Up Code</th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <% @groups.each do |group| %>
+                      <tr>
+                        <td data-link="<%= group_path(group) %>"><%= group.title %></td>
+                        <td data-link="<%= group_path(group) %>"><%= group.code %></td>
+                        <td><%= link_to edit_group_path(group), 'data-toggle'=> 'modal', 'data-target'=> '#myModal2' do %>
+                            <i class="fa fa-pencil" data-toggle="tooltip" title="Edit"></i>
+                          <% end %>
+                        </td>
+                        <td><%= link_to group_path(group),
+                                        method: :delete,
+                                        data: { confirm: 'Are you sure you want to delete this Group?' } do %>
+                            <i class="fa fa-trash-o" data-toggle="tooltip" title="Delete"></i>
+                          <% end %>
+                        </td>
+                        <% if group.teams.any? %>
+                          <td>
+                            <%= link_to generate_teams_group_path(group), 'data-toggle'=> 'modal', 'data-target'=> '#myModal3' do %>
+                              <i class="fa fa-user-plus" data-toggle="tooltip" title="Sort Teams"></i>
+                            <% end %>
+                          </td>
+                          <td>
+                            <%= link_to teams_path(group: group) do %>
+                              <i class="fa fa-users" data-toggle="tooltip" title="Teams"></i>
+                            <% end %>
+                          </td>
+                        <% else %>
+                          <td>
+                            <%= link_to generate_teams_group_path(group), 'data-toggle'=> 'modal', 'data-target'=> '#myModal3' do %>
+                              <i class="fa fa-user-plus" data-toggle="tooltip" title="Sort Teams"></i>
+                            <% end %>
+                          </td>
+                          <td></td>
+                        <% end %>
+                      </tr>
+                    <% end %>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- /.table-responsive -->
+              </div>
+              <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+          </div>
+          <!-- /.col-lg-6 -->
+        </div>
+      <% else %>
+        <% if @teams.none? %>
+          <p>Thanks for signing up! Your instructor will provide you with further details.</p>
+        <% else %>
+          <% @teams.each do |team| %>
+            <% if team.group.hide_results? %>
+              <p>Thanks for signing up! Your instructor will provide you with further details.</p>
+            <% else %>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Team Contact Information</a>
+                    <a id="myButtonControlID" href="#"><i class="fa fa-download pull-right"></i></a>
+                  </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in">
+                  <div class="panel-body" id="divTableDataHolder">
+                    <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example2">
+                      <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Email Address</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <% team.users.each do |user| %>
+                        <tr class="odd gradeX">
+                          <td> <%= user.first_name %> <%= user.last_name %> </td>
+                          <td> <%= user.email %> </td>
+                        </tr>
+                      <% end %>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Strengths Grid</a>
+                    <a id="myButtonControlID2" href="#"><i class="fa fa-download pull-right"></i></a>
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse in">
+                  <div class="panel-body">
+                    <div class="dataTable_wrapper table-responsive" id="strength_grid">
+                      <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
+                        <thead>
+                        <tr>
+                          <th></th>
+                          <th></th>
+                          <th colspan=9 bgcolor="#5C1F5C" style="color:white">EXECUTING</th>
+                          <th colspan=8 bgcolor="#cd853f" style="color:white">INFLUENCING</th>
+                          <th colspan=9 bgcolor="#24476B" style="color:white">RELATIONSHIP BUILDING</th>
+                          <th colspan=8 bgcolor="#7A1919" style="color:white">STRATEGIC THINKING</th>
+                        </tr>
+                        <tr>
+                          <th>Name</th>
+                          <% Strength.order(:domain).each do |strength| %>
+                            <th> <%= strength.name %> </th>
+                          <% end %>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <% team.users.each do |user| %>
+                          <tr class="odd gradeX">
+                            <td> <%= user.first_name %> <%= user.last_name %> </td>
+                            <% Strength.order(:domain).each do |s| %>
+                              <% if s == user.strengths[0] %>
+                                <td bgcolor="#7A1919" style="color:white">1</td>
+                              <% elsif s == user.strengths[1] %>
+                                <td bgcolor="#7A1919" style="color:white">2</td>
+                              <% elsif s == user.strengths[2] %>
+                                <td bgcolor="#7A1919" style="color:white">3</td>
+                              <% elsif s == user.strengths[3] %>
+                                <td bgcolor="#7A1919" style="color:white">4</td>
+                              <% elsif s == user.strengths[4] %>
+                                <td bgcolor="#7A1919" style="color:white">5</td>
+                              <% else %>
+                                <td></td>
+                              <% end %>
+                            <% end %>
+                          </tr>
+                        <% end %>
+                        </tbody>
+                      </table>
+                      <!-- /.table-responsive -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <% end %>
+          <% end %>
+        <% end %>
+      <% end %>
+      <% if current_user.admin %>
+        <button data-toggle="modal" class="add-group-btn" data-target="#myModal">
+          Add New Group
+        </button>
+      <% end %>
+    </div>
+  </section><!-- #contact -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <%= render 'form' %>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!--==========================
+  Footer
+============================-->
+<footer id="footer">
+  <div class="container">
+    <div class="copyright">
+      Engage Leadership Consulting&nbsp;&nbsp;&nbsp;info@engageleadershipconsulting.com
+    </div>
+    <div class="credits">
+    </div>
+  </div>
+</footer><!-- #footer -->
+
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <script>
+
+    jQuery(document).ready(function($) {
+        $("td[data-link]").click(function() {
+            window.location = $(this).data("link");
+        });
+
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+
+    $("[id$=myButtonControlID]").click(function(e) {
+        //creating a temporary HTML link element (they support setting file names)
+        var a = document.createElement('a');
+        //getting data from our div that contains the HTML table
+        var data_type = 'data:application/vnd.ms-excel';
+        var table_div = document.getElementById('divTableDataHolder');
+        var table_html = table_div.outerHTML.replace(/ /g, '%20');
+        a.href = data_type + ', ' + table_html;
+        //setting the file name
+        a.download = 'contact_info.xls';
+        //triggering the function
+        a.click();
+        //just in case, prevent default behaviour
+        e.preventDefault();
+    });
+
+    $("[id$=myButtonControlID2]").click(function(e) {
+        //creating a temporary HTML link element (they support setting file names)
+        var a = document.createElement('a');
+        //getting data from our div that contains the HTML table
+        var data_type = 'data:application/vnd.ms-excel';
+        var table_div = document.getElementById('strength_grid');
+        var table_html = table_div.outerHTML.replace(/ /g, '%20');
+        a.href = data_type + ', ' + table_html;
+        //setting the file name
+        a.download = 'teams.xls';
+        //triggering the function
+        a.click();
+        //just in case, prevent default behaviour
+        e.preventDefault();
+    });
+  </script>
+</body>
+</html>

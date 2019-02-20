@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Reveal Bootstrap Template</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Reveal
+    Theme URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body id="body">
+
+<!--==========================
+  Top Bar
+============================-->
+<!--<section id="topbar" class="d-none d-lg-block">-->
+  <!--<div class="container clearfix">-->
+    <!--<div class="contact-info float-left">-->
+      <!--<i class="fa fa-envelope-o"></i> <a href="mailto:contact@example.com">contact@example.com</a>-->
+      <!--<i class="fa fa-phone"></i> +1 5589 55488 55-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</section>-->
+
+<!--==========================
+  Header
+============================-->
+<header id="header">
+  <div class="container">
+
+    <div id="logo" class="pull-left">
+      <h1>
+        <%= link_to root_path do %>
+          Team<span>Sort</span>
+        <% end %>
+      </h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
+    </div>
+
+    <nav id="nav-menu-container">
+      <ul class="nav-menu">
+        <!-- /.dropdown -->
+        <li class="menu-has-children"><a href=""><i class="fa fa-user fa-fw"></i></a>
+          <ul>
+            <li>
+              <%= link_to edit_user_registration_path do %>
+                <i class="fa fa-gear fa-fw"></i> Edit Account
+              <% end %>
+            </li>
+            <li>
+              <%= link_to destroy_user_session_path, method: :delete do %>
+                <i class="fa fa-sign-out fa-fw"></i> Logout
+              <% end %>
+            </li>
+          </ul>
+        </li>
+        <!-- /.dropdown -->
+      </ul>
+    </nav><!-- #nav-menu-container -->
+  </div>
+</header><!-- #header -->
+
+<main id="main">
+
+  <section id="contact" class="wow fadeInUp">
+    <div class="container">
+      <div class="section-header">
+        <h2><%= @group.title %></h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              Users
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+              <div class="table-responsive">
+                <table class="table table-hover">
+                  <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Email Address</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <% @group.users.each do |user| %>
+                    <tr>
+                      <% if user != current_user %>
+                        <td><%= user.first_name %> <%= user.last_name %></td>
+                        <td><%= user.email %></td>
+                      <% end %>
+                    </tr>
+                  <% end %>
+                  </tbody>
+                </table>
+                <%= link_to 'Back', groups_path %>
+              </div>
+              <!-- /.table-responsive -->
+            </div>
+            <!-- /.panel-body -->
+          </div>
+          <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-6 -->
+      </div>
+    </div>
+  </section><!-- #contact -->
+
+</main>
+
+<!--==========================
+  Footer
+============================-->
+<footer id="footer">
+  <div class="container">
+    <div class="copyright">
+      Engage Leadership Consulting info@engageleadershipconsulting.com
+    </div>
+    <div class="credits">
+    </div>
+  </div>
+</footer><!-- #footer -->
+
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+</body>
+</html>

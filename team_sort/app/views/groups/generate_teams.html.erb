@@ -1,0 +1,16 @@
+<%= form_for @group, :url => run_sort_group_path do |f| %>
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h4 class="modal-title" id="myModalLabel">Sort Teams</h4>
+    </div>
+    <div class="modal-body">
+      <p>
+        <%= f.label :team_size %><br>
+        <%= f.number_field :team_size %>
+      </p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      <%= f.submit 'Run Sort', class: 'btn btn-primary' %>
+    </div>
+<% end %>

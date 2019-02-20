@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Reveal Bootstrap Template</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Reveal
+    Theme URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body id="body">
+
+<!--==========================
+  Top Bar
+============================-->
+<!--<section id="topbar" class="d-none d-lg-block">-->
+  <!--<div class="container clearfix">-->
+    <!--<div class="contact-info float-left">-->
+      <!--<i class="fa fa-envelope-o"></i> <a href="mailto:contact@example.com">contact@example.com</a>-->
+      <!--<i class="fa fa-phone"></i> +1 5589 55488 55-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</section>-->
+
+<!--==========================
+  Header
+============================-->
+<header id="header">
+  <div class="container">
+
+    <div id="logo" class="pull-left">
+      <h1>
+        <%= link_to root_path do %>
+          Team<span>Sort</span>
+        <% end %>
+      </h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
+    </div>
+
+    <nav id="nav-menu-container">
+      <ul class="nav-menu">
+        <li>
+          <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+            <div class="col-md-offset-6 navbar-login">
+              <%= f.email_field :email, placeholder: 'Email', class: 'login-item' %>
+
+              <%= f.password_field :password, autocomplete: "off", placeholder: 'Password', class: 'login-item' %>
+
+              <%= f.submit "Log in", class: 'login-item' %>
+            </div>
+          <% end %>
+        </li>
+      </ul>
+    </nav><!-- #nav-menu-container -->
+  </div>
+</header><!-- #header -->
+
+<main id="main">
+
+  <!--==========================
+    Call To Action Section
+  ============================-->
+  <!--<section id="call-to-action" class="wow fadeInUp">-->
+  <section id="call-to-action">
+    <div class="container">
+      <div class="row">
+        <div class="section-header">
+          <% if params[:admin] == 'true' %>
+            <h3 class="cta-title">Register for an Educator Account</h3>
+            <p class="cta-text"></p>
+          <% else %>
+            <h3 class="cta-title">Register for an Student Account</h3>
+            <p class="cta-text"> Use the unique code provided by your instructor to sign up for an educational
+              account and submit your strengths</p>
+          <% end %>
+        </div>
+      </div>
+
+      <%= form_for(resource, :as => resource_name, :url => user_registration_path) do |f| %>
+        <%= devise_error_messages! %>
+        <%= f.hidden_field :admin, value: params[:admin] %>
+
+        <hr>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="form-group">
+              <%= f.text_field :first_name, autofocus: true, class: 'form-control', required: true, placeholder: 'First Name' %>
+            </div>
+            <div class="form-group">
+              <%= f.text_field :last_name, class: 'form-control', required: true, placeholder: 'Last Name' %>
+            </div>
+            <div class="form-group">
+              <%= f.email_field :email, class: 'form-control', required: true, placeholder: 'Email Address' %>
+            </div>
+            <div class="form-group">
+              <%= f.password_field :password, autocomplete: 'off', class: 'form-control', required: true,
+                                   placeholder: 'Password', minlength: @minimum_password_length %>
+            </div>
+            <div class="form-group">
+              <%= f.password_field :password_confirmation, autocomplete: 'off', class: 'form-control',
+                                   required: true, placeholder: 'Confirm Password', minlength: @minimum_password_length %>
+            </div>
+            <div id="basic_user_div">
+              <div class="form-group">
+                <%= f.text_field :code, class: 'form-control', required: true, placeholder: 'Group Code (provided by your administrator)' %>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="form-group">
+              <%= f.collection_select :strength1, Strength.order(:name),:id,:name, {prompt: 'Strength 1'}, {class: 'form-control', required: true} %>
+            </div>
+            <div class="form-group">
+              <%= f.collection_select :strength2, Strength.order(:name),:id,:name, {prompt: 'Strength 2'}, {class: 'form-control', required: true} %>
+            </div>
+
+            <div class="form-group">
+              <%= f.collection_select :strength3, Strength.order(:name),:id,:name, {prompt: 'Strength 3'}, {class: 'form-control', required: true} %>
+            </div>
+
+            <div class="form-group">
+              <%= f.collection_select :strength4, Strength.order(:name),:id,:name, {prompt: 'Strength 4'}, {class: 'form-control', required: true} %>
+            </div>
+
+            <div class="form-group">
+              <%= f.collection_select :strength5, Strength.order(:name),:id,:name, {prompt: 'Strength 5'}, {class: 'form-control', required: true} %>
+            </div>
+          </div>
+        </div>
+        <div class="actions">
+          <button class="cta-btn align-middle" id="checkout">Create Account</button>
+        </div>
+        </div>
+      <% end %>
+
+      </div>
+      </section><!-- #call-to-action -->
+
+</main>
+
+<!--==========================
+  Footer
+============================-->
+<footer id="footer">
+  <div class="container">
+    <div class="copyright">
+      Engage Leadership Consulting&nbsp;&nbsp;&nbsp;info@engageleadershipconsulting.com
+    </div>
+    <div class="credits">
+    </div>
+  </div>
+</footer><!-- #footer -->
+
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<script type="text/javascript">
+  var admin = document.getElementById('user_admin');
+  var group_code_div = document.getElementById('basic_user_div');
+  var strength1 = document.getElementById('user_strength1');
+  var strength2 = document.getElementById('user_strength2');
+  var strength3 = document.getElementById('user_strength3');
+  var strength4 = document.getElementById('user_strength4');
+  var strength5 = document.getElementById('user_strength5');
+
+  if (admin.value == 'true') {
+    group_code_div.style['display'] = 'none';
+    $('#user_code').prop('required', false);
+    strength1.style['display'] = 'none';
+    $('#user_strength1').prop('required', false);
+    strength2.style['display'] = 'none';
+    $('#user_strength2').prop('required', false);
+    strength3.style['display'] = 'none';
+    $('#user_strength3').prop('required', false);
+    strength4.style['display'] = 'none';
+    $('#user_strength4').prop('required', false);
+    strength5.style['display'] = 'none';
+    $('#user_strength5').prop('required', false);
+  }
+  else {
+    group_code_div.style['display'] = 'block';
+    $('#user_code').prop('required', true);
+    strength1.style['display'] = 'block';
+    $('#user_strength1').prop('required', true);
+    strength2.style['display'] = 'block';
+    $('#user_strength2').prop('required', true);
+    strength3.style['display'] = 'block';
+    $('#user_strength3').prop('required', true);
+    strength4.style['display'] = 'block';
+    $('#user_strength4').prop('required', true);
+    strength5.style['display'] = 'block';
+    $('#user_strength5').prop('required', true);
+  }
+
+  // make sure the password confirmation matches the password
+  var password = document.getElementById("user_password");
+  var confirm_password = document.getElementById("user_password_confirmation");
+
+  function validatePassword(){
+    if(password.value != confirm_password.value) {
+      confirm_password.setCustomValidity("Passwords Don't Match");
+    } else {
+      confirm_password.setCustomValidity('');
+    }
+  }
+
+//  password.onchange = validatePassword;
+//  confirm_password.onkeyup = validatePassword;
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Reveal Bootstrap Template</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Reveal
+    Theme URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body id="body">
+
+<!--==========================
+  Top Bar
+============================-->
+<!--<section id="topbar" class="d-none d-lg-block">-->
+<!--<div class="container clearfix">-->
+<!--<div class="contact-info float-left">-->
+<!--<i class="fa fa-envelope-o"></i> <a href="mailto:contact@example.com">contact@example.com</a>-->
+<!--<i class="fa fa-phone"></i> +1 5589 55488 55-->
+<!--</div>-->
+<!--</div>-->
+<!--</section>-->
+
+<!--==========================
+  Header
+============================-->
+<header id="header">
+  <div class="container">
+
+    <div id="logo" class="pull-left">
+      <h1>
+        <%= link_to root_path do %>
+          Team<span>Sort</span>
+        <% end %>
+      </h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
+    </div>
+  </div>
+</header><!-- #header -->
+
+<main id="main">
+
+  <!--==========================
+    Call To Action Section
+  ============================-->
+  <!--<section id="call-to-action" class="wow fadeInUp">-->
+  <section id="call-to-action">
+    <div class="container">
+      <div class="row">
+        <div class="section-header">
+            <h3 class="cta-title">Edit Account</h3>
+            <p class="cta-text"></p>
+        </div>
+      </div>
+
+      <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+        <%= devise_error_messages! %>
+
+        <div class="container">
+          <div class="row">
+            <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+              <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+            <% end %>
+
+            <div class="col-lg-6">
+              <div class="form-group">
+                <%= f.collection_select :strength1, Strength.order(:name),:id,:name, {selected: resource.strengths[0].id}, {class: 'form-control', required: true} %>
+              </div>
+
+              <div class="form-group">
+                <%= f.collection_select :strength2, Strength.order(:name),:id,:name, {selected: resource.strengths[1].id}, {class: 'form-control', required: true} %>
+              </div>
+
+              <div class="form-group">
+                <%= f.collection_select :strength3, Strength.order(:name),:id,:name, {selected: resource.strengths[2].id}, {class: 'form-control', required: true} %>
+              </div>
+
+              <div class="form-group">
+                <%= f.collection_select :strength4, Strength.order(:name),:id,:name, {selected: resource.strengths[3].id}, {class: 'form-control', required: true} %>
+              </div>
+
+              <div class="form-group">
+                <%= f.collection_select :strength5, Strength.order(:name),:id,:name, {selected: resource.strengths[4].id}, {class: 'form-control', required: true} %>
+              </div>
+
+              <div id="basic_user_div">
+                <div class="form-group">
+                  <%= f.text_field :code, class: 'form-control', placeholder: 'Group Code (provided by your administrator)' %>
+                </div>
+              </div>
+
+              <div class="actions">
+                <%= f.submit "Update", class: 'cta-btn align-middle' %>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+
+      <br>
+      <%= link_to "Back", :back %>
+
+      </div>
+      </section><!-- #call-to-action -->
+
+</main>
+
+<!--==========================
+  Footer
+============================-->
+<footer id="footer">
+  <div class="container">
+    <div class="copyright">
+      Engage Leadership Consulting&nbsp;&nbsp;&nbsp;info@engageleadershipconsulting.com
+    </div>
+    <div class="credits">
+    </div>
+  </div>
+</footer><!-- #footer -->
+
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+</body>
+</html>
