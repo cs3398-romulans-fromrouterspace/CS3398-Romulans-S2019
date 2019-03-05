@@ -1,1 +1,8 @@
-I learned how to add my database to pgadmin so I could see how rails was seeing who the admin was so I can modify the admin portal later. 
+I learned how to add my database to pgadmin so I could see how rails was seeing who the admin was so I can modify the admin portal later.
+
+Plan:
+
+Add edit team button in admin portal to be able to pull teams and change members.
+      1. Add option to html
+      2. figure out how to pull teams from database. Maybe team.user
+      3. figure out how to move users on teams
