@@ -1,0 +1,1 @@
+I learned how to add my database to pgadmin so I could see how rails was seeing who the admin was so I can modify the admin portal later. 
