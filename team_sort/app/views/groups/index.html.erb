@@ -126,11 +126,6 @@
                         </td>
                         <% if group.teams.any? %>
                           <td>
-                            <%= link_to generate_teams_group_path(group), 'data-toggle'=> 'modal', 'data-target'=> '#myModal3' do %>
-                              <i class="fa fa-user-plus" data-toggle="tooltip" title="Sort Teams"></i>
-                            <% end %>
-                          </td>
-                          <td>
                             <%= link_to teams_path(group: group) do %>
                               <i class="fa fa-users" data-toggle="tooltip" title="Teams"></i>
                             <% end %>
@@ -138,7 +133,7 @@
                         <% else %>
                           <td>
                             <%= link_to generate_teams_group_path(group), 'data-toggle'=> 'modal', 'data-target'=> '#myModal3' do %>
-                              <i class="fa fa-user-plus" data-toggle="tooltip" title="Sort Teams"></i>
+                              <i class="fa fa-sort" data-toggle="tooltip" title="Sort Teams"></i>
                             <% end %>
                           </td>
                           <td>
