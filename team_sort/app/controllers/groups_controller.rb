@@ -18,10 +18,18 @@ class GroupsController < ApplicationController
     @group = Group.find(params[:id])
   end
 
+  CHARS = ('0'..'9').to_a + ('A'..'Z').to_a + ('a'..'z').to_a
+def random_password(length=10)
+  CHARS.sort_by { rand }.join[0...length]
+end
+
   def create
     create_params = group_params
     # generate random string for group code
-    create_params[:code] = SecureRandom.base64(5)
+    create_params[:code] = random_password(8)
+    
+    # Old PW generator
+    #SecureRandom.base64(5)
 
     @group = Group.new(create_params)
     @group.users << current_user
