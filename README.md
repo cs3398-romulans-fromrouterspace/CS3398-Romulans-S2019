@@ -15,4 +15,4 @@ TeamShare site. Happy Sharing :)
 ## Team Accomplishments
 
 Kendra:
-    Added a button for the admin in index.html. Will be adding functionality to this button in next sprint. 
+    Added a button for the admin in team_sort/app/views/groups/index.html. Will be adding functionality to this button in next sprint.
