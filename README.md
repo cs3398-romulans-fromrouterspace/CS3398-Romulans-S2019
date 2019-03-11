@@ -15,4 +15,5 @@ TeamShare site. Happy Sharing :)
 ## Team Accomplishments
 
 Kendra:
-    Added a button for the admin in team_sort/app/views/groups/index.html. Will be adding functionality to this button in next sprint.
+    Added a button for the admin in team_sort/app/views/groups/index.html for editing teams. Also changed previous sort button  to a different icon located in the same file. The edit teams button will pull all teams/ team members and allow the admin to make changes to the team
+    such as delete member or move a member to a different team. Kendra was not able to get this functionally in this sprint as it is a huge learning curve, having never worked with Ruby. For the next sprint Kendra will work on adding functionally to this button. 
