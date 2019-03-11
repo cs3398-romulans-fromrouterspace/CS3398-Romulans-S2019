@@ -9,5 +9,10 @@ We are a team who helps teams.  We are creating an app to simplify the work of b
 
 ## Getting the code running.
 To get the code running you need to have ruby on rails installed as well as a database management system (dbms) installed. These can vary based on the OS you
-are using. Once everything is installed and your dbms is up and running on a localhost or server, start up the rails application and you can navigate the 
+are using. Once everything is installed and your dbms is up and running on a localhost or server, start up the rails application and you can navigate the
 TeamShare site. Happy Sharing :)
+
+## Team Accomplishments
+
+Kendra:
+    Added a button for the admin in index.html. Will be adding functionality to this button in next sprint. 
