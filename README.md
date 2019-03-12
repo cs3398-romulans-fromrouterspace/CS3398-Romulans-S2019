@@ -26,3 +26,7 @@ Hollie:
 
 William:
     Messed around with the UI appearance of the log in button, and made it slightly bigger in size. Also messed around with background color, but no changes were pushed as the color wasn't yet decided by the team. A majority amount of this sprint's time frame was spent around learning ruby, and getting a working environment set up on Windows. Future steps will include modifying the UI further, upon team vote. 
+
+Anne:
+    Updated Add New Group form to better reflect color scheme of website.  May add further changes, such as changing the background color to match that of main front page.  Chose the indigo portion of the TeamSort logo color to alter the title bar of the modal popup window.  
+	
