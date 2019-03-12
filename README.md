@@ -20,3 +20,7 @@ Kendra:
 
 Austin:
     Modified the previous groupcode for the admin in team_sort/app/controllers/groups_controllers.rb for generating group codes. This allowed us to remove unwanted symbols and only have upper/lower-case letters and numbers to only be included in the generated code. While the learning curve was great, it was simple to implement a random generator for ruby. 
+
+William:
+    Messed around with the user login UI, as to make improvements to the lesser quality
+    of the appearance. The button size was modified to be slightly bigger, and the color of the background was changed around, but not finalized, as we weren't sure what color to use. A great amount of time of the sprint was spent studying Ruby and figuring out how the project worked as a whole, as well as getting it set up on Windows, which was a task in of itself. Future steps to be made will include modifying other portions of the UI, once the team has decided what changes will be better as a whole. 
