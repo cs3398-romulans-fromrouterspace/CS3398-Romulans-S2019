@@ -5,7 +5,9 @@ By Romulans from Router Space, CS3398.
 We want to help you distill an abstract task (coordinating people based on strengths) into distinct, manageable items.  We started this project because people and time are valuable resources.  TeamSort helps streamline both.
 
 ## Our Vision
-We are a team who helps teams.  We are creating an app to simplify the work of building and scheduling teams based on skill sets and personality traits.  TeamSort is designed for simplicity and ease of use, so anyone responsible for small or large groups of people can coordinate individuals into teams.  We base each member's traits off of results from the CliftonStrengths quiz found here: https://www.gallupstrengthscenter.com/product/en-us/10108/top-5-cliftonstrengths-access. TeamSort does the rest of the work.
+We are a team who helps teams.  We are creating an app to simplify the work of building and scheduling teams based on skill sets and personality traits.  TeamSort is designed for simplicity and ease of use, so anyone responsible for small or large groups of people can coordinate individuals into teams.  We base each member's traits off of results from the CliftonStrengths quiz found here: 
+https://www.gallupstrengthscenter.com/product/en-us/10108/top-5-cliftonstrengths-access. 
+TeamSort does the rest of the work.
 
 ## Getting the code running.
 To get the code running you need to have ruby on rails installed as well as a database management system (dbms) installed. These can vary based on the OS you are using. Once everything is installed and your dbms is up and running on a localhost or server, start up the rails application and you can navigate the TeamSort site. Happy Sharing :)
