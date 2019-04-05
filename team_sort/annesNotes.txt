@@ -1,0 +1,4 @@
+Icy background color:  #f2f5f8
+Basic background: #ffffff
+Logo indigo:  #0c2e8a
+Logo teal:  #50d8af
