@@ -3029,3 +3029,39 @@ puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
 puma (3.11.4) lib/puma/server.rb:446:in `process_client'
 puma (3.11.4) lib/puma/server.rb:306:in `block in run'
 puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-04-04 23:16:12 -0500
+  [1m[35m (6.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 14ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-04-04 23:16:13 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (13.7ms)
+Completed 500 Internal Server Error in 961ms (ActiveRecord: 8.8ms)
+
+
+  
+ActionView::Template::Error (No such file or directory @ rb_file_s_rename - (/home/anne/Dropbox/College/Current/Soen/GitHubWork/CS3398-Romulans-S2019/team_sort/tmp/cache/assets/sprockets/v3.0/GU/GUlXE_DTBkbTra0mpQ39EWQHXpd3Ay2JjFhnUfce6p4.cache.47368651908900.23856.126499, /home/anne/Dropbox/College/Current/Soen/GitHubWork/CS3398-Romulans-S2019/team_sort/tmp/cache/assets/sprockets/v3.0/GU/GUlXE_DTBkbTra0mpQ39EWQHXpd3Ay2JjFhnUfce6p4.cache)):
+    4:     <title>Team Sort</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+    9:   </head>
+   10: 
+  
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___4306941892052862972_47368645486320'
+Started GET "/" for 127.0.0.1 at 2019-04-04 23:16:25 -0500
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-04-04 23:16:25 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 1089ms (Views: 1087.8ms | ActiveRecord: 0.0ms)
+
+
