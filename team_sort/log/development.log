@@ -3065,3 +3065,240 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 1089ms (Views: 1087.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-04-05 02:01:29 -0500
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 15ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-04-05 02:01:29 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (19.5ms)
+Completed 500 Internal Server Error in 652ms (ActiveRecord: 8.9ms)
+
+
+  
+ActionView::Template::Error (No such file or directory @ rb_file_s_rename - (/home/anne/Dropbox/College/Current/Soen/GitHubWork/CS3398-Romulans-S2019/team_sort/tmp/cache/assets/sprockets/v3.0/GU/GUlXE_DTBkbTra0mpQ39EWQHXpd3Ay2JjFhnUfce6p4.cache.47439501007320.27087.725174, /home/anne/Dropbox/College/Current/Soen/GitHubWork/CS3398-Romulans-S2019/team_sort/tmp/cache/assets/sprockets/v3.0/GU/GUlXE_DTBkbTra0mpQ39EWQHXpd3Ay2JjFhnUfce6p4.cache)):
+    4:     <title>Team Sort</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+    9:   </head>
+   10: 
+  
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___4185359943344288399_47439494395840'
+Started GET "/" for 127.0.0.1 at 2019-04-05 02:01:34 -0500
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-04-05 02:01:34 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 1031ms (Views: 1029.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-04-05 02:01:56 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nLswTXLmT9ARTlJjiRbhcKloZRP4NYe5hrcFX3T8u9Q8oKocmFbbu2Lb/yrktkU+UCIFDFgDlzz6fk87ACL9sg==", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nLswTXLmT9ARTlJjiRbhcKloZRP4NYe5hrcFX3T8u9Q8oKocmFbbu2Lb/yrktkU+UCIFDFgDlzz6fk87ACL9sg==", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 328ms (Views: 325.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-04-05 02:02:07 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ItNwFPGShTb4R5447gvug/3Q41jagPmhy4P9k6XieMKCyOpFGyIRXYvSM3GDq0rNBJqDR3q26SS3Srf30Tw+pA==", "user"=>{"email"=>"anne.dromeda.0112@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "anne.dromeda.0112@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (139.4ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2019-04-05 07:02:07.717389"], ["last_sign_in_at", "2019-03-12 21:00:24.011325"], ["sign_in_count", 4], ["updated_at", "2019-04-05 07:02:07.719419"], ["id", 1]]
+  [1m[35m (8.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 362ms (ActiveRecord: 152.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-05 02:02:07 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (2.9ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mTeam Exists (1.6ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 1], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (9.5ms)
+  Rendered groups/index.html.erb within layouts/application (71.5ms)
+Completed 200 OK in 381ms (Views: 310.8ms | ActiveRecord: 14.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-05 02:08:44 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mTeam Exists (1.6ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 1], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (4.2ms)
+  Rendered groups/index.html.erb within layouts/application (24.8ms)
+Completed 200 OK in 291ms (Views: 282.8ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-05 02:09:06 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mTeam Exists (1.7ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 1], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (4.8ms)
+  Rendered groups/index.html.erb within layouts/application (26.8ms)
+Completed 200 OK in 307ms (Views: 293.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-05 02:31:43 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.8ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mTeam Exists (2.9ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 1], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (2.4ms)
+  Rendered groups/index.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 258ms (Views: 249.9ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-05 02:32:09 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (2.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mTeam Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 1], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (2.7ms)
+  Rendered groups/index.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 242ms (Views: 229.5ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-05 02:32:28 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (4.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mTeam Exists (6.8ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 1], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (2.4ms)
+  Rendered groups/index.html.erb within layouts/application (29.8ms)
+Completed 200 OK in 361ms (Views: 345.0ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-05 02:36:24 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (1.9ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mTeam Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 1], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (2.3ms)
+  Rendered groups/index.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 333ms (Views: 321.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-05 02:37:05 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mTeam Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 1], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (2.4ms)
+  Rendered groups/index.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 257ms (Views: 251.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-05 02:38:12 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (3.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mTeam Exists (2.2ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 1], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (2.3ms)
+  Rendered groups/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 311ms (Views: 294.9ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-05 02:38:21 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mTeam Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 1], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (3.4ms)
+  Rendered groups/index.html.erb within layouts/application (45.4ms)
+Completed 200 OK in 260ms (Views: 251.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-05 02:40:40 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mTeam Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 1], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (2.7ms)
+  Rendered groups/index.html.erb within layouts/application (26.7ms)
+Completed 200 OK in 301ms (Views: 293.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-05 02:42:52 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mTeam Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 1], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (2.7ms)
+  Rendered groups/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 369ms (Views: 362.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-05 02:44:03 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (1.9ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mTeam Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 1], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (2.2ms)
+  Rendered groups/index.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 298ms (Views: 290.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-05 02:52:39 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (6.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mTeam Exists (1.9ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 1], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (6.7ms)
+  Rendered groups/index.html.erb within layouts/application (30.8ms)
+Completed 200 OK in 318ms (Views: 305.0ms | ActiveRecord: 8.7ms)
+
+
+Started POST "/groups" for 127.0.0.1 at 2019-04-05 02:53:05 -0500
+Processing by GroupsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LDH0m3foxGVlSzqKG17mge386ZQ1ExOIZFFmMGYEQiZlg5uHeIl4CZEEgO9gRPHZqtg5qui7flCp3yEhQ1Qj3g==", "group"=>{"title"=>"", "hide_results"=>"0"}, "commit"=>"Save"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  Rendering groups/new.html.erb within layouts/application
+  Rendered groups/_form.html.erb (8.1ms)
+  Rendered groups/new.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 491ms (Views: 311.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-05 02:53:22 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mTeam Exists (1.4ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 1], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (2.5ms)
+  Rendered groups/index.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 326ms (Views: 319.9ms | ActiveRecord: 2.3ms)
+
+
