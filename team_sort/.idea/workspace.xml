@@ -2,7 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5875c92b-bcbb-4614-93f2-b4b7de2069d6" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sortinghat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sortinghat.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/registrations/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/registrations/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/development.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/development.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/2I/2IFQSVBpvfzPk_owkEgrxazstKjRghZ4ALdJhdwPO40.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/2I/2IFQSVBpvfzPk_owkEgrxazstKjRghZ4ALdJhdwPO40.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/2h/2hinhMwqf9V_7fT-PUUZU-PbvhF8IlDodrntk2OTR64.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/2h/2hinhMwqf9V_7fT-PUUZU-PbvhF8IlDodrntk2OTR64.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/68/68P4VY3uosD-hcJ03dBh6vJRWIVyFkHYZhr7QwZBvvU.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/68/68P4VY3uosD-hcJ03dBh6vJRWIVyFkHYZhr7QwZBvvU.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/6m/6mJm5mOhD8Zd3_YqgBcaHYPG4-bkX0-Ctvma-C8jqmk.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/6m/6mJm5mOhD8Zd3_YqgBcaHYPG4-bkX0-Ctvma-C8jqmk.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/7a/7aoINvAk0uz_NAu4ClqUz_24oJXfH6YTHLpyfaxD-K0.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/7a/7aoINvAk0uz_NAu4ClqUz_24oJXfH6YTHLpyfaxD-K0.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Ct/Ctwn6Pg5TorlZ8MX8oAHcxz3I-1Qn60c8SgTJSldx1Q.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Ct/Ctwn6Pg5TorlZ8MX8oAHcxz3I-1Qn60c8SgTJSldx1Q.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/E7/e7xw3-qmAxZELc4xAKGRTUC4gutvS2OrrA7OYrG6Xso.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/E7/e7xw3-qmAxZELc4xAKGRTUC4gutvS2OrrA7OYrG6Xso.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/G2/g2-1lr6uA1XX3lCkpcQndKu6EUfya6q8yMap93dIHrU.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/G2/g2-1lr6uA1XX3lCkpcQndKu6EUfya6q8yMap93dIHrU.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Gc/gcnQDObk4cvIDxRp9bGBPHizx_NjoIWq2QrQfDwkk8s.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Gc/gcnQDObk4cvIDxRp9bGBPHizx_NjoIWq2QrQfDwkk8s.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/HC/HCDOUd7-S45aJ_PjVAC_Vmjyud3i1aQv4cE3t9_Z3Dw.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/HC/HCDOUd7-S45aJ_PjVAC_Vmjyud3i1aQv4cE3t9_Z3Dw.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Hz/HzjXSkuWtUsMbSvANzBz6t6uH_vA0-8W0oHrt6bDFcw.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Hz/HzjXSkuWtUsMbSvANzBz6t6uH_vA0-8W0oHrt6bDFcw.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/I9/I9Ji3hKbhOCXCg5Or8mdoK35rCPPZCSeNUUiuHJ176w.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/I9/I9Ji3hKbhOCXCg5Or8mdoK35rCPPZCSeNUUiuHJ176w.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Ih/iHvo76ilueGxsZR9ZYeOkoHJu9wbbchSgZtX089tuUI.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Ih/iHvo76ilueGxsZR9ZYeOkoHJu9wbbchSgZtX089tuUI.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Ki/KiJvDhoXbOQ1yu9Mv4vP8s-fp5doZUaNQL3_Fn9ZYcM.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Ki/KiJvDhoXbOQ1yu9Mv4vP8s-fp5doZUaNQL3_Fn9ZYcM.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/NP/nPD0WoqhfnG3KzXtpN9mH_isuccla6UhY814De8QQx8.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/NP/nPD0WoqhfnG3KzXtpN9mH_isuccla6UhY814De8QQx8.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Ng/Ng9LsqqezEE4NLb8iBHLAcAWCR-VYsvTb1QCQj7NbAU.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Ng/Ng9LsqqezEE4NLb8iBHLAcAWCR-VYsvTb1QCQj7NbAU.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Qv/qvWSfOGo5mjGboPwJHw8Sr-IDVgkVyS9AheFOLTqvy0.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Qv/qvWSfOGo5mjGboPwJHw8Sr-IDVgkVyS9AheFOLTqvy0.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Ra/RAebqqzXgo-pDJ-Vr5KQfmT7cBzYdyHX9uJLrDhhbV0.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Ra/RAebqqzXgo-pDJ-Vr5KQfmT7cBzYdyHX9uJLrDhhbV0.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Wn/WnSCeIdFcHPjDzbu4UpLfQouruTb9Ch0Hd1NU-DVs4w.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Wn/WnSCeIdFcHPjDzbu4UpLfQouruTb9Ch0Hd1NU-DVs4w.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/cP/cpoBobphUo5kVz1WnltmVCHU--ZRds3hs95aFzCjEY4.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/cP/cpoBobphUo5kVz1WnltmVCHU--ZRds3hs95aFzCjEY4.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/f2/f2Z_bWf7ouYc1SS_HA-AF50I3VMuFLJldemqrDW9nJQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/f2/f2Z_bWf7ouYc1SS_HA-AF50I3VMuFLJldemqrDW9nJQ.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/iR/iRC7zDOK0VDvZGyPPzRChaEeGAaNv5d717JR8CeM8aQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/iR/iRC7zDOK0VDvZGyPPzRChaEeGAaNv5d717JR8CeM8aQ.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/kH/kHvD10ntZ86v_TnDyyEX25xe68oLq4PnB-osTXLxmoA.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/kH/kHvD10ntZ86v_TnDyyEX25xe68oLq4PnB-osTXLxmoA.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/kc/kcB98tINzjx31gChl4uQGhJcMChmQ4qkvwoSMxrUYBg.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/kc/kcB98tINzjx31gChl4uQGhJcMChmQ4qkvwoSMxrUYBg.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/lj/lJ2YF0WXqhLDRGLdknua8h26y4DbXvbRATZtFGqR4ZE.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/lj/lJ2YF0WXqhLDRGLdknua8h26y4DbXvbRATZtFGqR4ZE.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/ml/MlERMZ-aL3mRq82mdcLrUb93ug7BFjcLICIwGN71Wfg.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/ml/MlERMZ-aL3mRq82mdcLrUb93ug7BFjcLICIwGN71Wfg.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/ni/niQS8tbkjW8PWehwrGdA_i6PsjcAOL0E30IiUcPMOdc.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/ni/niQS8tbkjW8PWehwrGdA_i6PsjcAOL0E30IiUcPMOdc.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/q2/q28JM9TH8turuKK_Lz7n8zGcZsuilOwKUcoNnyj0k3g.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/q2/q28JM9TH8turuKK_Lz7n8zGcZsuilOwKUcoNnyj0k3g.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/qW/QWbjzfZg0Z9XDB1UvrdxxcCbm2c74FFdtCFFDriZz4I.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/qW/QWbjzfZg0Z9XDB1UvrdxxcCbm2c74FFdtCFFDriZz4I.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/qh/qhiMGaiNpg2EgFkE0wXt5eTW4BR-SuhzYt8kLDlou4Y.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/qh/qhiMGaiNpg2EgFkE0wXt5eTW4BR-SuhzYt8kLDlou4Y.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/s3/s3Y7uvmqgplP-41QDz1rOBRuqDMmRDbdnIVZjYrM_Zg.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/s3/s3Y7uvmqgplP-41QDz1rOBRuqDMmRDbdnIVZjYrM_Zg.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/uR/UR1LYLpu4yZgiVwnSu_QBPvsKFcaEApnKKqP_H8tMJQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/uR/UR1LYLpu4yZgiVwnSu_QBPvsKFcaEApnKKqP_H8tMJQ.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/pids/server.pid" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/pids/server.pid" afterDir="false" />
     </list>
     <ignored path="sortinghat.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,69 +64,82 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/registrations/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="169" column="39" selection-start-line="169" selection-start-column="39" selection-end-line="169" selection-end-column="39" />
+            <state relative-caret-position="295">
+              <caret line="212" column="53" selection-start-line="212" selection-start-column="53" selection-end-line="212" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/strengths_controller.rb">
+        <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.6.0/gems/activemodel-5.1.6.2/lib/active_model/secure_password.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1830">
+              <caret line="122" column="8" selection-start-line="122" selection-start-column="8" selection-end-line="122" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.6.0/gems/devise-4.6.1/lib/devise/models/database_authenticatable.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1080">
+              <caret line="72" column="20" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.6.0/gems/devise-4.6.1/app/views/devise/shared/_error_messages.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/database.yml">
+        <entry file="file://$PROJECT_DIR$/app/views/devise/passwords/new.html.erb">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/strengths/index.html.erb">
+        <entry file="file://$PROJECT_DIR$/app/controllers/groups_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="585">
+              <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/registrations_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1185">
+              <caret line="79" column="9" selection-start-line="79" selection-start-column="2" selection-end-line="79" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/teams/index.html.erb">
           <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/models/strength.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/helpers/strength_helper.rb">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/strength.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.6.0/gems/devise-4.4.3/app/controllers/devise_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2580">
-              <caret line="172" column="63" selection-start-line="172" selection-start-column="48" selection-end-line="172" selection-end-column="63" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.6.0/gems/activemodel-5.1.6/lib/active_model/secure_password.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1220">
-              <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-            </state>
-          </provider>
         </entry>
       </file>
     </leaf>
@@ -150,6 +199,12 @@
       </list>
     </option>
   </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="19" />
     <option name="y" value="32" />
@@ -164,7 +219,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -231,7 +285,91 @@
               <item name="sortinghat" type="b2602c69:ProjectViewProjectNode" />
               <item name="team_sort" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="concerns" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sortinghat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="team_sort" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sortinghat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="team_sort" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="devise" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sortinghat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="team_sort" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="devise" type="462c0819:PsiDirectoryNode" />
+              <item name="confirmations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sortinghat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="team_sort" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="devise" type="462c0819:PsiDirectoryNode" />
+              <item name="mailer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sortinghat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="team_sort" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="devise" type="462c0819:PsiDirectoryNode" />
+              <item name="passwords" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sortinghat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="team_sort" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="devise" type="462c0819:PsiDirectoryNode" />
+              <item name="registrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sortinghat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="team_sort" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="devise" type="462c0819:PsiDirectoryNode" />
+              <item name="sessions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sortinghat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="team_sort" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="devise" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sortinghat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="team_sort" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="devise" type="462c0819:PsiDirectoryNode" />
+              <item name="unlocks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sortinghat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="team_sort" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="groups" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sortinghat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="team_sort" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sortinghat" type="b2602c69:ProjectViewProjectNode" />
@@ -246,6 +384,13 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="strengths" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sortinghat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="team_sort" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="teams" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sortinghat" type="b2602c69:ProjectViewProjectNode" />
@@ -272,6 +417,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="RailsProjectView" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -459,17 +605,24 @@
       <workItem from="1551477035412" duration="555000" />
       <workItem from="1551836108957" duration="121000" />
       <workItem from="1551836233744" duration="2454000" />
+      <workItem from="1554689265767" duration="1611000" />
+      <workItem from="1554691121648" duration="1688000" />
+      <workItem from="1554693024536" duration="1635000" />
+      <workItem from="1554694881844" duration="1811000" />
+      <workItem from="1554697045635" duration="1759000" />
+      <workItem from="1554698852051" duration="1679000" />
+      <workItem from="1554700674465" duration="780000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5622000" />
+    <option name="totallyTimeSpent" value="16585000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="19" y="32" width="1277" height="704" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24777327" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27611336" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -510,137 +663,6 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/groups/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/config/manifest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="34" selection-start-column="34" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="188" column="14" selection-start-line="188" selection-start-column="6" selection-end-line="188" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.yml" />
-    <entry file="file://$PROJECT_DIR$/app/views/teams/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="57" column="61" selection-start-line="57" selection-start-column="49" selection-end-line="57" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/bundle">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/setup">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="59" column="12" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/charges.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/sb-admin-2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="91" column="20" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/development.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore" />
-    <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/reset_password_instructions.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="64" column="49" selection-start-line="64" selection-start-column="49" selection-end-line="64" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20170521043055_create_join_table_user_group.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20190204020816_create_join_table_user_team.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20170528021537_create_join_table_user_strength.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="5" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.byebug_history">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20170528083438_add_group_to_team.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20170528063807_create_teams.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/group.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -687,24 +709,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/groups_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/groups/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="102" column="49" selection-start-line="102" selection-start-column="49" selection-end-line="102" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -714,12 +722,6 @@
           <caret line="166" column="27" selection-start-line="166" selection-start-column="26" selection-end-line="166" selection-end-column="27" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/jobs/application_job.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/registrations_helper.rb">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor" />
@@ -731,10 +733,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/registrations_controller.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20170528021122_create_strengths.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/strength_helper.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/strength.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -745,45 +760,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.6.0/gems/activemodel-5.1.6/lib/active_model/secure_password.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1220">
-          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/registrations/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="169" column="39" selection-start-line="169" selection-start-column="39" selection-end-line="169" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/strengths_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/jobs/application_job.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20170528021122_create_strengths.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" selection-start-column="6" selection-end-column="6" />
+        <state relative-caret-position="1352">
+          <caret line="91" column="20" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/strength_helper.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/strength.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/strengths/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/strength.rb">
       <provider selected="true" editor-type-id="text-editor">
@@ -791,6 +776,158 @@
           <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="32" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.6.0/gems/activemodel-5.1.6/lib/active_model/secure_password.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/registrations.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/registrations_helper.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/strengths_controller.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.6.0/gems/railties-5.1.6.2/lib/rails/generators/resource_helpers.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/groups/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="102" column="49" selection-start-line="102" selection-start-column="49" selection-end-line="102" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/confirmations/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="64" column="49" selection-start-line="64" selection-start-column="49" selection-end-line="64" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/unlocks/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/strengths/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/flow/dom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="2849" column="2" selection-start-line="2849" selection-start-column="2" selection-end-line="2849" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/application_record.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/unlock_instructions.html.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="4" column="38046" selection-start-line="4" selection-start-column="38046" selection-end-line="4" selection-end-column="38046" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/jquery.dataTables.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="88" column="12" selection-start-line="88" selection-start-column="12" selection-end-line="88" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/application_system_test_case.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_helper.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/controllers/registrations_controller_test.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/registrations/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="212" column="53" selection-start-line="212" selection-start-column="53" selection-end-line="212" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.6.0/gems/activemodel-5.1.6.2/lib/active_model/secure_password.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1830">
+          <caret line="122" column="8" selection-start-line="122" selection-start-column="8" selection-end-line="122" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.6.0/gems/devise-4.6.1/lib/devise/models/database_authenticatable.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="72" column="20" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.6.0/gems/devise-4.6.1/app/views/devise/shared/_error_messages.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/passwords/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/groups_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/registrations_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1185">
+          <caret line="79" column="9" selection-start-line="79" selection-start-column="2" selection-end-line="79" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/teams/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
