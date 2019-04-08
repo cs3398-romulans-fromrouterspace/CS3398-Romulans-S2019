@@ -19,6 +19,7 @@ Kendra:
 
 Austin:
     Modified the previous groupcode for the admin in team_sort/app/controllers/groups_controllers.rb for generating group codes. This allowed us to remove unwanted symbols and only have upper/lower-case letters and numbers to only be included in the generated code. While the learning curve was great, it was simple to implement a random generator for ruby. Austin's sprint was completed successfully. For the next sprint, Austin will be generating error messages with invalid groupcode inputs. For sprint 2, I was faced with complications of our database filled with strengths. The strengths had not been popuated in the database forcing us to halt our tasks and sort this issue out. The reason is because I need the strengths list in order to create test student accounts, and since our database was not populated I was unable to test out my original task of creating messages for invalid groups codes inputted.
+
 Hollie:
 	Modified html in team_sort/app/views/registrations/new.html.erb to add password requirements for user registration. Password requirements are currently only 6-character minimum. Requirements are now shown to user upon registration. Hollie's sprint was completed successfully. For the next sprint Hollie will work on adding an error message when the passwords entered in registration do not match.
 
