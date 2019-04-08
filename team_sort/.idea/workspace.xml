@@ -6,38 +6,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/registrations/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/registrations/new.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/development.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/development.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/2I/2IFQSVBpvfzPk_owkEgrxazstKjRghZ4ALdJhdwPO40.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/2I/2IFQSVBpvfzPk_owkEgrxazstKjRghZ4ALdJhdwPO40.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/2h/2hinhMwqf9V_7fT-PUUZU-PbvhF8IlDodrntk2OTR64.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/2h/2hinhMwqf9V_7fT-PUUZU-PbvhF8IlDodrntk2OTR64.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/68/68P4VY3uosD-hcJ03dBh6vJRWIVyFkHYZhr7QwZBvvU.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/68/68P4VY3uosD-hcJ03dBh6vJRWIVyFkHYZhr7QwZBvvU.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/6m/6mJm5mOhD8Zd3_YqgBcaHYPG4-bkX0-Ctvma-C8jqmk.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/6m/6mJm5mOhD8Zd3_YqgBcaHYPG4-bkX0-Ctvma-C8jqmk.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/7a/7aoINvAk0uz_NAu4ClqUz_24oJXfH6YTHLpyfaxD-K0.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/7a/7aoINvAk0uz_NAu4ClqUz_24oJXfH6YTHLpyfaxD-K0.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Ct/Ctwn6Pg5TorlZ8MX8oAHcxz3I-1Qn60c8SgTJSldx1Q.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Ct/Ctwn6Pg5TorlZ8MX8oAHcxz3I-1Qn60c8SgTJSldx1Q.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/E7/e7xw3-qmAxZELc4xAKGRTUC4gutvS2OrrA7OYrG6Xso.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/E7/e7xw3-qmAxZELc4xAKGRTUC4gutvS2OrrA7OYrG6Xso.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/G2/g2-1lr6uA1XX3lCkpcQndKu6EUfya6q8yMap93dIHrU.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/G2/g2-1lr6uA1XX3lCkpcQndKu6EUfya6q8yMap93dIHrU.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Gc/gcnQDObk4cvIDxRp9bGBPHizx_NjoIWq2QrQfDwkk8s.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Gc/gcnQDObk4cvIDxRp9bGBPHizx_NjoIWq2QrQfDwkk8s.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/HC/HCDOUd7-S45aJ_PjVAC_Vmjyud3i1aQv4cE3t9_Z3Dw.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/HC/HCDOUd7-S45aJ_PjVAC_Vmjyud3i1aQv4cE3t9_Z3Dw.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Hz/HzjXSkuWtUsMbSvANzBz6t6uH_vA0-8W0oHrt6bDFcw.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Hz/HzjXSkuWtUsMbSvANzBz6t6uH_vA0-8W0oHrt6bDFcw.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/I9/I9Ji3hKbhOCXCg5Or8mdoK35rCPPZCSeNUUiuHJ176w.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/I9/I9Ji3hKbhOCXCg5Or8mdoK35rCPPZCSeNUUiuHJ176w.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Ih/iHvo76ilueGxsZR9ZYeOkoHJu9wbbchSgZtX089tuUI.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Ih/iHvo76ilueGxsZR9ZYeOkoHJu9wbbchSgZtX089tuUI.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Ki/KiJvDhoXbOQ1yu9Mv4vP8s-fp5doZUaNQL3_Fn9ZYcM.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Ki/KiJvDhoXbOQ1yu9Mv4vP8s-fp5doZUaNQL3_Fn9ZYcM.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/NP/nPD0WoqhfnG3KzXtpN9mH_isuccla6UhY814De8QQx8.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/NP/nPD0WoqhfnG3KzXtpN9mH_isuccla6UhY814De8QQx8.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Ng/Ng9LsqqezEE4NLb8iBHLAcAWCR-VYsvTb1QCQj7NbAU.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Ng/Ng9LsqqezEE4NLb8iBHLAcAWCR-VYsvTb1QCQj7NbAU.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Qv/qvWSfOGo5mjGboPwJHw8Sr-IDVgkVyS9AheFOLTqvy0.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Qv/qvWSfOGo5mjGboPwJHw8Sr-IDVgkVyS9AheFOLTqvy0.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Ra/RAebqqzXgo-pDJ-Vr5KQfmT7cBzYdyHX9uJLrDhhbV0.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Ra/RAebqqzXgo-pDJ-Vr5KQfmT7cBzYdyHX9uJLrDhhbV0.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Wn/WnSCeIdFcHPjDzbu4UpLfQouruTb9Ch0Hd1NU-DVs4w.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Wn/WnSCeIdFcHPjDzbu4UpLfQouruTb9Ch0Hd1NU-DVs4w.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/cP/cpoBobphUo5kVz1WnltmVCHU--ZRds3hs95aFzCjEY4.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/cP/cpoBobphUo5kVz1WnltmVCHU--ZRds3hs95aFzCjEY4.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/f2/f2Z_bWf7ouYc1SS_HA-AF50I3VMuFLJldemqrDW9nJQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/f2/f2Z_bWf7ouYc1SS_HA-AF50I3VMuFLJldemqrDW9nJQ.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/iR/iRC7zDOK0VDvZGyPPzRChaEeGAaNv5d717JR8CeM8aQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/iR/iRC7zDOK0VDvZGyPPzRChaEeGAaNv5d717JR8CeM8aQ.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/kH/kHvD10ntZ86v_TnDyyEX25xe68oLq4PnB-osTXLxmoA.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/kH/kHvD10ntZ86v_TnDyyEX25xe68oLq4PnB-osTXLxmoA.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/kc/kcB98tINzjx31gChl4uQGhJcMChmQ4qkvwoSMxrUYBg.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/kc/kcB98tINzjx31gChl4uQGhJcMChmQ4qkvwoSMxrUYBg.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/lj/lJ2YF0WXqhLDRGLdknua8h26y4DbXvbRATZtFGqR4ZE.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/lj/lJ2YF0WXqhLDRGLdknua8h26y4DbXvbRATZtFGqR4ZE.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/ml/MlERMZ-aL3mRq82mdcLrUb93ug7BFjcLICIwGN71Wfg.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/ml/MlERMZ-aL3mRq82mdcLrUb93ug7BFjcLICIwGN71Wfg.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/ni/niQS8tbkjW8PWehwrGdA_i6PsjcAOL0E30IiUcPMOdc.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/ni/niQS8tbkjW8PWehwrGdA_i6PsjcAOL0E30IiUcPMOdc.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/q2/q28JM9TH8turuKK_Lz7n8zGcZsuilOwKUcoNnyj0k3g.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/q2/q28JM9TH8turuKK_Lz7n8zGcZsuilOwKUcoNnyj0k3g.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/qW/QWbjzfZg0Z9XDB1UvrdxxcCbm2c74FFdtCFFDriZz4I.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/qW/QWbjzfZg0Z9XDB1UvrdxxcCbm2c74FFdtCFFDriZz4I.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/qh/qhiMGaiNpg2EgFkE0wXt5eTW4BR-SuhzYt8kLDlou4Y.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/qh/qhiMGaiNpg2EgFkE0wXt5eTW4BR-SuhzYt8kLDlou4Y.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/s3/s3Y7uvmqgplP-41QDz1rOBRuqDMmRDbdnIVZjYrM_Zg.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/s3/s3Y7uvmqgplP-41QDz1rOBRuqDMmRDbdnIVZjYrM_Zg.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/uR/UR1LYLpu4yZgiVwnSu_QBPvsKFcaEApnKKqP_H8tMJQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/uR/UR1LYLpu4yZgiVwnSu_QBPvsKFcaEApnKKqP_H8tMJQ.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/pids/server.pid" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/pids/server.pid" afterDir="false" />
     </list>
     <ignored path="sortinghat.iws" />
@@ -67,8 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/registrations/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="212" column="53" selection-start-line="212" selection-start-column="53" selection-end-line="212" selection-end-column="53" />
+            <state relative-caret-position="370">
+              <caret line="221" lean-forward="true" selection-start-line="221" selection-end-line="221" />
             </state>
           </provider>
         </entry>
@@ -122,8 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/groups_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+            <state relative-caret-position="495">
+              <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -219,6 +187,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -417,8 +387,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -612,17 +580,19 @@
       <workItem from="1554697045635" duration="1759000" />
       <workItem from="1554698852051" duration="1679000" />
       <workItem from="1554700674465" duration="780000" />
+      <workItem from="1554760973752" duration="348000" />
+      <workItem from="1554762245889" duration="326000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16585000" />
+    <option name="totallyTimeSpent" value="17259000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="19" y="32" width="1277" height="704" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27611336" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28421053" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -873,8 +843,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/registrations/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="212" column="53" selection-start-line="212" selection-start-column="53" selection-end-line="212" selection-end-column="53" />
+        <state relative-caret-position="370">
+          <caret line="221" lean-forward="true" selection-start-line="221" selection-end-line="221" />
         </state>
       </provider>
     </entry>
@@ -914,8 +884,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/groups_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+        <state relative-caret-position="495">
+          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
         </state>
       </provider>
     </entry>

@@ -203,7 +203,9 @@
   }
 
   // make sure the password confirmation matches the password
-  $("#checkout").on("click",function validatePassword(){
+  //$("#checkout").on("click",
+
+      function validatePassword{
       var password = document.getElementById('user_password');
       var confirm_password = document.getElementById('user_password_confirmation');
 
@@ -213,8 +215,10 @@
               confirm_password.setCustomValidity("");
           }
 
-      $("#form-group").submit();
-  });
+
+  //});
+
+  validatePassword().reportValidity();
 
   //password.oninput = validatePassword;
   //confirm_password.oninput = validatePassword;
