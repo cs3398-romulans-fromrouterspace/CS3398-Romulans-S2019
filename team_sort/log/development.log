@@ -5840,3 +5840,1962 @@ Processing by RegistrationsController#new as HTML
 Completed 200 OK in 69ms (Views: 66.8ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/" for ::1 at 2019-04-09 12:22:44 -0500
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 16ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-04-09 12:22:45 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 494ms (Views: 408.0ms | ActiveRecord: 51.2ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-04-09 12:22:50 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0byjbkM9NCJleg9joqa6ATAzryTeEmcI1wBu4KnP7mS/soWF9uNqwIWZfLrxpjy2VyV4/wq2EX2qmBz2lXPGSw==", "user"=>{"email"=>"hollie2@test.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (42.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "hollie2@test.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 46ms (ActiveRecord: 42.2ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0byjbkM9NCJleg9joqa6ATAzryTeEmcI1wBu4KnP7mS/soWF9uNqwIWZfLrxpjy2VyV4/wq2EX2qmBz2lXPGSw==", "user"=>{"email"=>"hollie2@test.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 206ms (Views: 52.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-04-09 12:22:58 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jqhHeZ9bVwxaBOKRGn8XT8zAbIC9eJ6OCaA4D81tiIngpmGSKoUJ7rrnkUhJf5H4q9a7W2nc6Pt0OEoZ8dGgpg==", "user"=>{"email"=>"hollie@test.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "hollie@test.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.6ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jqhHeZ9bVwxaBOKRGn8XT8zAbIC9eJ6OCaA4D81tiIngpmGSKoUJ7rrnkUhJf5H4q9a7W2nc6Pt0OEoZ8dGgpg==", "user"=>{"email"=>"hollie@test.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 195ms (Views: 51.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up?admin=true" for ::1 at 2019-04-09 12:23:09 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"true"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb___3357114760460764923_70137871598700 at /Users/holliewilson/Desktop/School/SPG19/CS3398/GitHub/CS3398-Romulans-S2019/team_sort/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (42.5ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (70.2ms)
+Completed 200 OK in 123ms (Views: 75.6ms | ActiveRecord: 47.1ms)
+
+
+Started GET "/users/sign_up?admin=true" for ::1 at 2019-04-09 12:23:41 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"true"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb___3357114760460764923_70137872537000 at /Users/holliewilson/Desktop/School/SPG19/CS3398/GitHub/CS3398-Romulans-S2019/team_sort/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 74ms (Views: 72.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_up?admin=true" for ::1 at 2019-04-09 12:24:55 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"true"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb___3357114760460764923_70137853788060 at /Users/holliewilson/Desktop/School/SPG19/CS3398/GitHub/CS3398-Romulans-S2019/team_sort/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 63ms (Views: 61.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-04-09 12:24:56 -0500
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-04-09 12:24:56 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 55ms (Views: 54.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up?admin=true" for ::1 at 2019-04-09 12:25:00 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"true"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb___3357114760460764923_70137860171340 at /Users/holliewilson/Desktop/School/SPG19/CS3398/GitHub/CS3398-Romulans-S2019/team_sort/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (0.7ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 78ms (Views: 76.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/sign_up?admin=true" for ::1 at 2019-04-09 12:25:49 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"true"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb___3357114760460764923_70137916097940 at /Users/holliewilson/Desktop/School/SPG19/CS3398/GitHub/CS3398-Romulans-S2019/team_sort/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 63ms (Views: 61.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-04-09 12:26:11 -0500
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-04-09 12:26:11 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 61ms (Views: 60.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-04-09 12:26:28 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pKogH1vvBLdETG+Uqr8DNH29RUgsmGMJ5qqjORUrRU7KpAb07jFaVaSvHE35v4WDGquSk/g8FXybMtEvKZdtYQ==", "user"=>{"email"=>"hollie@test.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "hollie@test.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.8ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pKogH1vvBLdETG+Uqr8DNH29RUgsmGMJ5qqjORUrRU7KpAb07jFaVaSvHE35v4WDGquSk/g8FXybMtEvKZdtYQ==", "user"=>{"email"=>"hollie@test.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 190ms (Views: 49.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-04-09 12:26:37 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jvxFvNQRFXxMlc4EyfLx3/2K8WqUVbNnvAsURnuy9cTg8mNXYc9Lnqx2vd2a8ndompwmsUDxxRLBk2ZQRw7d6w==", "user"=>{"email"=>"hollie@test.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "hollie@test.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.5ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jvxFvNQRFXxMlc4EyfLx3/2K8WqUVbNnvAsURnuy9cTg8mNXYc9Lnqx2vd2a8ndompwmsUDxxRLBk2ZQRw7d6w==", "user"=>{"email"=>"hollie@test.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 188ms (Views: 47.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-04-09 12:26:44 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jvxFvNQRFXxMlc4EyfLx3/2K8WqUVbNnvAsURnuy9cTg8mNXYc9Lnqx2vd2a8ndompwmsUDxxRLBk2ZQRw7d6w==", "user"=>{"email"=>"hollie@test.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "hollie@test.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.5ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jvxFvNQRFXxMlc4EyfLx3/2K8WqUVbNnvAsURnuy9cTg8mNXYc9Lnqx2vd2a8ndompwmsUDxxRLBk2ZQRw7d6w==", "user"=>{"email"=>"hollie@test.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 210ms (Views: 69.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up?admin=true" for ::1 at 2019-04-09 12:28:10 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"true"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb___3357114760460764923_70137871352520 at /Users/holliewilson/Desktop/School/SPG19/CS3398/GitHub/CS3398-Romulans-S2019/team_sort/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 72ms (Views: 70.5ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for ::1 at 2019-04-09 12:28:34 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iwvymySHyLBzOoEU/IPkKq1YNwv/YrorfC8mgEd5UgHlBdRwkVmWUpPZ8s2vg2Kdyk7g0CvGzF4Bt1SWe8V6Lg==", "user"=>{"admin"=>"true", "first_name"=>"Test", "last_name"=>"Case", "email"=>"testcase1@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"", "strength1"=>"", "strength2"=>"", "strength3"=>"", "strength4"=>"", "strength5"=>""}}
+  [1m[36mGroup Load (1.5ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", ""], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "testcase1@test.com"], ["LIMIT", 1]]
+  [1m[35mSQL (32.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "admin", "first_name", "last_name") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "testcase1@test.com"], ["encrypted_password", "$2a$11$pMizJfVOQJET9o3AqGWmWOEB3C82K45EqMM1/WKDpS6cWRtvLKJS2"], ["created_at", "2019-04-09 17:28:34.451309"], ["updated_at", "2019-04-09 17:28:34.451309"], ["admin", "t"], ["first_name", "Test"], ["last_name", "Case"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (4.2ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", "2019-04-09 17:28:34.487262"], ["last_sign_in_at", "2019-04-09 17:28:34.487262"], ["current_sign_in_ip", "::1"], ["last_sign_in_ip", "::1"], ["updated_at", "2019-04-09 17:28:34.487740"], ["id", 5]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/groups
+Completed 302 Found in 232ms (ActiveRecord: 67.2ms)
+
+
+Started GET "/groups" for ::1 at 2019-04-09 12:28:34 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (3.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 5]]
+  Rendered groups/_form.html.erb (7.0ms)
+  Rendered groups/index.html.erb within layouts/application (74.2ms)
+Completed 200 OK in 186ms (Views: 152.6ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/groups" for ::1 at 2019-04-09 12:28:37 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 5]]
+  Rendered groups/_form.html.erb (1.5ms)
+  Rendered groups/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 56ms (Views: 51.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/edit" for ::1 at 2019-04-09 12:28:40 -0500
+Processing by RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_registrations_edit_html_erb___1003817997701009321_70137859866240 at /Users/holliewilson/Desktop/School/SPG19/CS3398/GitHub/CS3398-Romulans-S2019/team_sort/app/views/devise/registrations/edit.html.erb:69)
+  [1m[36mStrength Load (34.8ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 5]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (46.1ms)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 37.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    76: 
+    77:             <div class="col-lg-6">
+    78:               <div class="form-group">
+    79:                 <%= f.collection_select :strength1, Strength.order(:name),:id,:name, {selected: resource.strengths[0].id}, {class: 'form-control', required: true} %>
+    80:               </div>
+    81: 
+    82:               <div class="form-group">
+  
+app/views/devise/registrations/edit.html.erb:79:in `block in _app_views_devise_registrations_edit_html_erb___1003817997701009321_70137859866240'
+app/views/devise/registrations/edit.html.erb:68:in `_app_views_devise_registrations_edit_html_erb___1003817997701009321_70137859866240'
+Started GET "/" for ::1 at 2019-04-09 12:28:54 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 5]]
+  Rendered groups/_form.html.erb (1.4ms)
+  Rendered groups/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 56ms (Views: 53.0ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-04-09 12:29:00 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3ZhvXNSmnmZy04f6Lu7CgQqnDgBDzsBl/duTZU73X06zlkm3YXjAhJIw9CN97kQ2bbHZ25dqthCAQ+Fzckt3YQ=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-04-09 12:29:00 -0500
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-04-09 12:29:00 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 65ms (Views: 63.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-04-09 12:29:09 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E5xvoSOLZMqThTJzku2hbp1w+7GtFL93Z3Ukq45j1RN0rnqogdeEWSANBC1o7nJNL6LHdm5vQmsX0XCSalpwkg==", "user"=>{"email"=>"testcase1@test.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "testcase1@test.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.4ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["current_sign_in_at", "2019-04-09 17:29:09.540653"], ["sign_in_count", 2], ["updated_at", "2019-04-09 17:29:09.541408"], ["id", 5]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 153ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/" for ::1 at 2019-04-09 12:29:09 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 5]]
+  Rendered groups/_form.html.erb (2.1ms)
+  Rendered groups/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 58ms (Views: 54.6ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-04-09 12:29:12 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Pfho7iNPWxa25SAmWSf7iDXRFis2gQx6njc54iyRvIpT2yxnN69FxUx41J/dX9OOtggAMGkqBf8wbpu3PqgP1g=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-04-09 12:29:12 -0500
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-04-09 12:29:12 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 64ms (Views: 63.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-09 12:29:23 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb___3357114760460764923_70137897685420 at /Users/holliewilson/Desktop/School/SPG19/CS3398/GitHub/CS3398-Romulans-S2019/team_sort/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 61ms (Views: 59.5ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for ::1 at 2019-04-09 12:30:01 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BpjfDICA1qEA3Vks3pIE7fiV0TP7+igLDe/DdVhFyBAnSJEKKxEfQG77mA6q0XReweUTomCHmolsSjobZSQK9g==", "user"=>{"admin"=>"false", "first_name"=>"Student", "last_name"=>"Test", "email"=>"student@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"12345", "strength1"=>"1", "strength2"=>"20", "strength3"=>"25", "strength4"=>"32", "strength5"=>"24"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "12345"], ["LIMIT", 1]]
+No template found for RegistrationsController#create, rendering head :no_content
+Completed 204 No Content in 268ms (ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for ::1 at 2019-04-09 12:30:07 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BpjfDICA1qEA3Vks3pIE7fiV0TP7+igLDe/DdVhFyBAnSJEKKxEfQG77mA6q0XReweUTomCHmolsSjobZSQK9g==", "user"=>{"admin"=>"false", "first_name"=>"Student", "last_name"=>"Test", "email"=>"student@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"12345", "strength1"=>"1", "strength2"=>"20", "strength3"=>"25", "strength4"=>"32", "strength5"=>"24"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "12345"], ["LIMIT", 1]]
+No template found for RegistrationsController#create, rendering head :no_content
+Completed 204 No Content in 248ms (ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for ::1 at 2019-04-09 12:30:15 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BpjfDICA1qEA3Vks3pIE7fiV0TP7+igLDe/DdVhFyBAnSJEKKxEfQG77mA6q0XReweUTomCHmolsSjobZSQK9g==", "user"=>{"admin"=>"false", "first_name"=>"Student", "last_name"=>"Test", "email"=>"student@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"12345", "strength1"=>"1", "strength2"=>"20", "strength3"=>"25", "strength4"=>"32", "strength5"=>"24"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "12345"], ["LIMIT", 1]]
+No template found for RegistrationsController#create, rendering head :no_content
+Completed 204 No Content in 252ms (ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for ::1 at 2019-04-09 12:30:33 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BpjfDICA1qEA3Vks3pIE7fiV0TP7+igLDe/DdVhFyBAnSJEKKxEfQG77mA6q0XReweUTomCHmolsSjobZSQK9g==", "user"=>{"admin"=>"false", "first_name"=>"Student", "last_name"=>"Test", "email"=>"student@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"34567", "strength1"=>"1", "strength2"=>"20", "strength3"=>"25", "strength4"=>"32", "strength5"=>"24"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "34567"], ["LIMIT", 1]]
+No template found for RegistrationsController#create, rendering head :no_content
+Completed 204 No Content in 251ms (ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for ::1 at 2019-04-09 12:30:47 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BpjfDICA1qEA3Vks3pIE7fiV0TP7+igLDe/DdVhFyBAnSJEKKxEfQG77mA6q0XReweUTomCHmolsSjobZSQK9g==", "user"=>{"admin"=>"false", "first_name"=>"Student", "last_name"=>"Test", "email"=>"student1@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"34567", "strength1"=>"1", "strength2"=>"20", "strength3"=>"25", "strength4"=>"32", "strength5"=>"24"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "34567"], ["LIMIT", 1]]
+No template found for RegistrationsController#create, rendering head :no_content
+Completed 204 No Content in 253ms (ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for ::1 at 2019-04-09 12:30:56 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BpjfDICA1qEA3Vks3pIE7fiV0TP7+igLDe/DdVhFyBAnSJEKKxEfQG77mA6q0XReweUTomCHmolsSjobZSQK9g==", "user"=>{"admin"=>"false", "first_name"=>"Student", "last_name"=>"Test", "email"=>"student1@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"34567", "strength1"=>"1", "strength2"=>"20", "strength3"=>"25", "strength4"=>"32", "strength5"=>"24"}}
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "34567"], ["LIMIT", 1]]
+No template found for RegistrationsController#create, rendering head :no_content
+Completed 204 No Content in 255ms (ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for ::1 at 2019-04-09 12:31:00 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BpjfDICA1qEA3Vks3pIE7fiV0TP7+igLDe/DdVhFyBAnSJEKKxEfQG77mA6q0XReweUTomCHmolsSjobZSQK9g==", "user"=>{"admin"=>"false", "first_name"=>"Student", "last_name"=>"Test", "email"=>"student1@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"12345", "strength1"=>"1", "strength2"=>"20", "strength3"=>"25", "strength4"=>"32", "strength5"=>"24"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "12345"], ["LIMIT", 1]]
+No template found for RegistrationsController#create, rendering head :no_content
+Completed 204 No Content in 251ms (ActiveRecord: 0.4ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-04-09 12:31:20 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BpjfDICA1qEA3Vks3pIE7fiV0TP7+igLDe/DdVhFyBAnSJEKKxEfQG77mA6q0XReweUTomCHmolsSjobZSQK9g==", "user"=>{"email"=>"testcase1@test.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "testcase1@test.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2019-04-09 17:31:20.541121"], ["last_sign_in_at", "2019-04-09 17:29:09.540653"], ["sign_in_count", 3], ["updated_at", "2019-04-09 17:31:20.541897"], ["id", 5]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 151ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/" for ::1 at 2019-04-09 12:31:20 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 5]]
+  Rendered groups/_form.html.erb (1.4ms)
+  Rendered groups/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 85ms (Views: 82.0ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/groups" for ::1 at 2019-04-09 12:31:35 -0500
+Processing by GroupsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TMzGePSBxozH0DujKJfLBq+Yg7m505LjWsIC/C/kIjUVokIbsQ630uhqV6rZiDa6mM6VjsdCm+0p7HTns76Fxg==", "group"=>{"title"=>"TestTeam", "hide_results"=>"0"}, "commit"=>"Save"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (42.0ms)[0m  [1m[32mINSERT INTO "groups" ("title", "code", "created_at", "updated_at", "hide_results") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "TestTeam"], ["code", "BnfgIX0H"], ["created_at", "2019-04-09 17:31:35.408290"], ["updated_at", "2019-04-09 17:31:35.408290"], ["hide_results", "f"]]
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "groups_users" ("user_id", "group_id") VALUES ($1, $2)[0m  [["user_id", 5], ["group_id", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/groups
+Completed 302 Found in 67ms (ActiveRecord: 46.0ms)
+
+
+Started GET "/groups" for ::1 at 2019-04-09 12:31:35 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 5]]
+  [1m[36mTeam Exists (40.1ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 1], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (1.5ms)
+  Rendered groups/index.html.erb within layouts/application (51.5ms)
+Completed 200 OK in 100ms (Views: 53.7ms | ActiveRecord: 43.4ms)
+
+
+Started GET "/groups/1" for ::1 at 2019-04-09 12:31:38 -0500
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "groups_users" ON "users"."id" = "groups_users"."user_id" WHERE "groups_users"."group_id" = $1[0m  [["group_id", 1]]
+  Rendered groups/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 69ms (Views: 63.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/groups" for ::1 at 2019-04-09 12:31:41 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 5]]
+  [1m[36mTeam Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 1], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (1.4ms)
+  Rendered groups/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 55ms (Views: 50.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/groups" for ::1 at 2019-04-09 12:31:45 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 5]]
+  [1m[36mTeam Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 1], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (1.5ms)
+  Rendered groups/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 57ms (Views: 53.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/groups" for ::1 at 2019-04-09 12:31:47 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 5]]
+  [1m[36mTeam Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 1], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (1.6ms)
+  Rendered groups/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 72ms (Views: 67.9ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-04-09 12:31:49 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"zuOkBqp3MBykT5IU87n6XWnJmiRsEuWvYaJVtFsjGqWXjSBl7/hBQov1/h0CpgfhXp+MExKD7KESjCOvx3m9Vg=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-04-09 12:31:49 -0500
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-04-09 12:31:49 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 46ms (Views: 45.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-09 12:31:53 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb___3357114760460764923_70137872470860 at /Users/holliewilson/Desktop/School/SPG19/CS3398/GitHub/CS3398-Romulans-S2019/team_sort/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 71ms (Views: 69.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for ::1 at 2019-04-09 12:32:25 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SRuAit3Mz92+wnAKTUbcjGpRLFWJBvL3ETXgA8BV6huitT+frkvC+FzuMOS+/9E7iQb6zEUgSUH+csj8Nsf0aw==", "user"=>{"admin"=>"false", "first_name"=>"Test", "last_name"=>"Student", "email"=>"student@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"BnfgIX0H", "strength1"=>"1", "strength2"=>"3", "strength3"=>"20", "strength4"=>"24", "strength5"=>"8"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "BnfgIX0H"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "student@test.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "first_name", "last_name") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "student@test.com"], ["encrypted_password", "$2a$11$pOZuDQQXjGclB8dEkEwbDOMIFfjjVCUlPvfj9HEkVvgnSilXVUFf2"], ["created_at", "2019-04-09 17:32:25.159787"], ["updated_at", "2019-04-09 17:32:25.159787"], ["first_name", "Test"], ["last_name", "Student"]]
+  [1m[35m (40.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "groups_users" ("user_id", "group_id") VALUES ($1, $2)[0m  [["user_id", 6], ["group_id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStrength Load (0.5ms)[0m  [1m[34mSELECT  "strengths".* FROM "strengths" WHERE "strengths"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "strengths_users" ("user_id", "strength_id") VALUES ($1, $2)[0m  [["user_id", 6], ["strength_id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStrength Load (0.3ms)[0m  [1m[34mSELECT  "strengths".* FROM "strengths" WHERE "strengths"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "strengths_users" ("user_id", "strength_id") VALUES ($1, $2)[0m  [["user_id", 6], ["strength_id", 3]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStrength Load (0.3ms)[0m  [1m[34mSELECT  "strengths".* FROM "strengths" WHERE "strengths"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "strengths_users" ("user_id", "strength_id") VALUES ($1, $2)[0m  [["user_id", 6], ["strength_id", 20]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStrength Load (0.3ms)[0m  [1m[34mSELECT  "strengths".* FROM "strengths" WHERE "strengths"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "strengths_users" ("user_id", "strength_id") VALUES ($1, $2)[0m  [["user_id", 6], ["strength_id", 24]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStrength Load (0.2ms)[0m  [1m[34mSELECT  "strengths".* FROM "strengths" WHERE "strengths"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "strengths_users" ("user_id", "strength_id") VALUES ($1, $2)[0m  [["user_id", 6], ["strength_id", 8]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", "2019-04-09 17:32:25.229574"], ["last_sign_in_at", "2019-04-09 17:32:25.229574"], ["current_sign_in_ip", "::1"], ["last_sign_in_ip", "::1"], ["updated_at", "2019-04-09 17:32:25.230015"], ["id", 6]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/groups
+Completed 302 Found in 225ms (ActiveRecord: 52.6ms)
+
+
+Started GET "/groups" for ::1 at 2019-04-09 12:32:25 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mTeam Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" INNER JOIN "teams_users" ON "teams"."id" = "teams_users"."team_id" WHERE "teams_users"."user_id" = $1 LIMIT $2[0m  [["user_id", 6], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (1.7ms)
+  Rendered groups/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 63ms (Views: 55.6ms | ActiveRecord: 5.7ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-04-09 12:32:30 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JLIunN3o1H8+bVd2RQMYT1eanNv8DjoaIsfAaZd0ARvPHJGJrm/ZWtxBF5i2uhX4tM1KQjAogazNgOiWYeYfaw=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-04-09 12:32:30 -0500
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-04-09 12:32:30 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 62ms (Views: 61.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-04-09 12:32:42 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XHcFHmxiE3xLSYjjiJ6PZ/6wv3vSnnu7kh5QrNTMV4tz7ONvExR4B/W8CJDxLYixV2eacpblm87Ziq4Q6V3OIQ==", "user"=>{"email"=>"testcase1@test.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "testcase1@test.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2019-04-09 17:32:42.146162"], ["last_sign_in_at", "2019-04-09 17:31:20.541121"], ["sign_in_count", 4], ["updated_at", "2019-04-09 17:32:42.146940"], ["id", 5]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 149ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2019-04-09 12:32:42 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 5]]
+  [1m[36mTeam Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 1], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (1.6ms)
+  Rendered groups/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 52ms (Views: 48.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/groups/1" for ::1 at 2019-04-09 12:32:44 -0500
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "groups_users" ON "users"."id" = "groups_users"."user_id" WHERE "groups_users"."group_id" = $1[0m  [["group_id", 1]]
+  Rendered groups/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 65ms (Views: 61.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/groups" for ::1 at 2019-04-09 12:32:54 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 5]]
+  [1m[36mTeam Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 1], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (1.6ms)
+  Rendered groups/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 55ms (Views: 51.7ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-04-09 12:33:02 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"RHNTzGC0DnDS0OGJZ4ImSCF+sQjbGX/+HoRXKHBfAo+TR2ezH3v6cpWALB2lUNlTRhAErQgaqUz6MVzG3ZA5GQ=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-04-09 12:33:02 -0500
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-04-09 12:33:02 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 46ms (Views: 44.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-09 12:33:06 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb___3357114760460764923_70137854856920 at /Users/holliewilson/Desktop/School/SPG19/CS3398/GitHub/CS3398-Romulans-S2019/team_sort/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (0.7ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 72ms (Views: 70.5ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/users" for ::1 at 2019-04-09 12:33:43 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qrbSfNiDckgzAYLQIQsq4epx95ELTCvKy9a1upBa9gxL9vtP7IKGKpCuTFsZZ3obDLBizo1y/6rTfqipKg7mxw==", "user"=>{"admin"=>"false", "first_name"=>"Test2", "last_name"=>"Student", "email"=>"student@test.com2", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"BnfgIX0H", "strength1"=>"28", "strength2"=>"24", "strength3"=>"9", "strength4"=>"15", "strength5"=>"14"}}
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "BnfgIX0H"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "student@test.com2"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "first_name", "last_name") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "student@test.com2"], ["encrypted_password", "$2a$11$XbAFYE8Ouod2MOjvaJ07G.VANIa7/nU46HlCzxpVXM16Qq4ZKam4q"], ["created_at", "2019-04-09 17:33:44.038479"], ["updated_at", "2019-04-09 17:33:44.038479"], ["first_name", "Test2"], ["last_name", "Student"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "groups_users" ("user_id", "group_id") VALUES ($1, $2)[0m  [["user_id", 7], ["group_id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStrength Load (0.3ms)[0m  [1m[34mSELECT  "strengths".* FROM "strengths" WHERE "strengths"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "strengths_users" ("user_id", "strength_id") VALUES ($1, $2)[0m  [["user_id", 7], ["strength_id", 28]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStrength Load (0.2ms)[0m  [1m[34mSELECT  "strengths".* FROM "strengths" WHERE "strengths"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "strengths_users" ("user_id", "strength_id") VALUES ($1, $2)[0m  [["user_id", 7], ["strength_id", 24]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStrength Load (0.2ms)[0m  [1m[34mSELECT  "strengths".* FROM "strengths" WHERE "strengths"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "strengths_users" ("user_id", "strength_id") VALUES ($1, $2)[0m  [["user_id", 7], ["strength_id", 9]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStrength Load (0.2ms)[0m  [1m[34mSELECT  "strengths".* FROM "strengths" WHERE "strengths"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "strengths_users" ("user_id", "strength_id") VALUES ($1, $2)[0m  [["user_id", 7], ["strength_id", 15]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStrength Load (0.2ms)[0m  [1m[34mSELECT  "strengths".* FROM "strengths" WHERE "strengths"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "strengths_users" ("user_id", "strength_id") VALUES ($1, $2)[0m  [["user_id", 7], ["strength_id", 14]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", "2019-04-09 17:33:44.058487"], ["last_sign_in_at", "2019-04-09 17:33:44.058487"], ["current_sign_in_ip", "::1"], ["last_sign_in_ip", "::1"], ["updated_at", "2019-04-09 17:33:44.058954"], ["id", 7]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/groups
+Completed 302 Found in 173ms (ActiveRecord: 8.9ms)
+
+
+Started GET "/groups" for ::1 at 2019-04-09 12:33:44 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mTeam Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" INNER JOIN "teams_users" ON "teams"."id" = "teams_users"."team_id" WHERE "teams_users"."user_id" = $1 LIMIT $2[0m  [["user_id", 7], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (1.5ms)
+  Rendered groups/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 57ms (Views: 49.2ms | ActiveRecord: 3.1ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-04-09 12:33:48 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"95TXrL4M0VDjeDQ3er5R+AOStqejyIVuk+y38wRjyyUW1P6fig0lMkDX+rxC0gEC5VMj+CX2UQ6LRKrgvjfb7g=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-04-09 12:33:48 -0500
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-04-09 12:33:48 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 46ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-09 12:33:54 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb___3357114760460764923_70137871632720 at /Users/holliewilson/Desktop/School/SPG19/CS3398/GitHub/CS3398-Romulans-S2019/team_sort/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 58ms (Views: 56.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for ::1 at 2019-04-09 12:34:31 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Wh+NRUl8rUKm3pq6iZKRjGHCIKQlyxmLUygYLLtah52OMG6QwGICkXs4DCdlhKbzS/wcev6byt/jvYzpDYX5Gw==", "user"=>{"admin"=>"false", "first_name"=>"Test3", "last_name"=>"Student", "email"=>"student3@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"BnfgIX0H", "strength1"=>"11", "strength2"=>"6", "strength3"=>"25", "strength4"=>"22", "strength5"=>"9"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "BnfgIX0H"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "student3@test.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "first_name", "last_name") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "student3@test.com"], ["encrypted_password", "$2a$11$CjN1FcaZ.4n6py.V4.u7P.fA1hKs7FTwzh28FIB.cKBCC4pMMqPmG"], ["created_at", "2019-04-09 17:34:31.254342"], ["updated_at", "2019-04-09 17:34:31.254342"], ["first_name", "Test3"], ["last_name", "Student"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "groups_users" ("user_id", "group_id") VALUES ($1, $2)[0m  [["user_id", 8], ["group_id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStrength Load (0.4ms)[0m  [1m[34mSELECT  "strengths".* FROM "strengths" WHERE "strengths"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "strengths_users" ("user_id", "strength_id") VALUES ($1, $2)[0m  [["user_id", 8], ["strength_id", 11]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStrength Load (0.2ms)[0m  [1m[34mSELECT  "strengths".* FROM "strengths" WHERE "strengths"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "strengths_users" ("user_id", "strength_id") VALUES ($1, $2)[0m  [["user_id", 8], ["strength_id", 6]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStrength Load (0.1ms)[0m  [1m[34mSELECT  "strengths".* FROM "strengths" WHERE "strengths"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "strengths_users" ("user_id", "strength_id") VALUES ($1, $2)[0m  [["user_id", 8], ["strength_id", 25]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStrength Load (0.2ms)[0m  [1m[34mSELECT  "strengths".* FROM "strengths" WHERE "strengths"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "strengths_users" ("user_id", "strength_id") VALUES ($1, $2)[0m  [["user_id", 8], ["strength_id", 22]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStrength Load (0.2ms)[0m  [1m[34mSELECT  "strengths".* FROM "strengths" WHERE "strengths"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "strengths_users" ("user_id", "strength_id") VALUES ($1, $2)[0m  [["user_id", 8], ["strength_id", 9]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", "2019-04-09 17:34:31.278855"], ["last_sign_in_at", "2019-04-09 17:34:31.278855"], ["current_sign_in_ip", "::1"], ["last_sign_in_ip", "::1"], ["updated_at", "2019-04-09 17:34:31.279287"], ["id", 8]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/groups
+Completed 302 Found in 190ms (ActiveRecord: 8.8ms)
+
+
+Started GET "/groups" for ::1 at 2019-04-09 12:34:31 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mTeam Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" INNER JOIN "teams_users" ON "teams"."id" = "teams_users"."team_id" WHERE "teams_users"."user_id" = $1 LIMIT $2[0m  [["user_id", 8], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (1.4ms)
+  Rendered groups/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 57ms (Views: 54.4ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-04-09 12:34:35 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"aREYDxBOJYhF2K+0oPV0ZRKb93eQRDSbvD/HrcTry2y9PvvamVCKW5g+OSlM40MaOKXLqUsU588MqlNocjS16g=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2019-04-09 12:34:35 -0500
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-04-09 12:34:35 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 50ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-09 12:34:39 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb___3357114760460764923_70137918023740 at /Users/holliewilson/Desktop/School/SPG19/CS3398/GitHub/CS3398-Romulans-S2019/team_sort/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (0.7ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 71ms (Views: 69.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for ::1 at 2019-04-09 12:35:32 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"74VLjoCnlBtDcrXb+KSrUcSRjDpGn5frl17PbRVQyJUXvYH7Sdb/N1iUFcSTEFqXX3IlWNrIx/0W9fdUqtabwA==", "user"=>{"admin"=>"false", "first_name"=>"Test4", "last_name"=>"Student", "email"=>"student4@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"BnfgIX0H", "strength1"=>"20", "strength2"=>"34", "strength3"=>"21", "strength4"=>"3", "strength5"=>"13"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "BnfgIX0H"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "student4@test.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "first_name", "last_name") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "student4@test.com"], ["encrypted_password", "$2a$11$pCaVCBELzd0HkZl8ydHpEek550srv/3bo6hAJuO2RbyzOjFTzFUnm"], ["created_at", "2019-04-09 17:35:32.830246"], ["updated_at", "2019-04-09 17:35:32.830246"], ["first_name", "Test4"], ["last_name", "Student"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "groups_users" ("user_id", "group_id") VALUES ($1, $2)[0m  [["user_id", 9], ["group_id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStrength Load (0.2ms)[0m  [1m[34mSELECT  "strengths".* FROM "strengths" WHERE "strengths"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "strengths_users" ("user_id", "strength_id") VALUES ($1, $2)[0m  [["user_id", 9], ["strength_id", 20]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStrength Load (0.2ms)[0m  [1m[34mSELECT  "strengths".* FROM "strengths" WHERE "strengths"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "strengths_users" ("user_id", "strength_id") VALUES ($1, $2)[0m  [["user_id", 9], ["strength_id", 34]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStrength Load (0.2ms)[0m  [1m[34mSELECT  "strengths".* FROM "strengths" WHERE "strengths"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "strengths_users" ("user_id", "strength_id") VALUES ($1, $2)[0m  [["user_id", 9], ["strength_id", 21]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStrength Load (0.2ms)[0m  [1m[34mSELECT  "strengths".* FROM "strengths" WHERE "strengths"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "strengths_users" ("user_id", "strength_id") VALUES ($1, $2)[0m  [["user_id", 9], ["strength_id", 3]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStrength Load (0.2ms)[0m  [1m[34mSELECT  "strengths".* FROM "strengths" WHERE "strengths"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "strengths_users" ("user_id", "strength_id") VALUES ($1, $2)[0m  [["user_id", 9], ["strength_id", 13]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", "2019-04-09 17:35:32.850959"], ["last_sign_in_at", "2019-04-09 17:35:32.850959"], ["current_sign_in_ip", "::1"], ["last_sign_in_ip", "::1"], ["updated_at", "2019-04-09 17:35:32.851458"], ["id", 9]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/groups
+Completed 302 Found in 172ms (ActiveRecord: 8.8ms)
+
+
+Started GET "/groups" for ::1 at 2019-04-09 12:35:32 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mTeam Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" INNER JOIN "teams_users" ON "teams"."id" = "teams_users"."team_id" WHERE "teams_users"."user_id" = $1 LIMIT $2[0m  [["user_id", 9], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (1.5ms)
+  Rendered groups/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 53ms (Views: 50.0ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-04-09 12:35:35 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"CjdpMKJH2wdZfv7a9V77MWckS8LzwvNe7rglKLgIc1nyD6NFazawK0KYXsWe6gr3/MfioG+Vo0hvEx0RB44gDA=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-04-09 12:35:35 -0500
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-04-09 12:35:35 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 62ms (Views: 60.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-04-09 12:35:43 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Itq8fPOPayLtM1W5G55k70v8qiABo7pJ0QPZ6UJTT8uuFOdzOjItqlKfQdf9HYJBTUb0p1GQ5kJq8VNzVmF10w==", "user"=>{"email"=>"testcase1@test.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "testcase1@test.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2019-04-09 17:35:43.438631"], ["last_sign_in_at", "2019-04-09 17:32:42.146162"], ["sign_in_count", 5], ["updated_at", "2019-04-09 17:35:43.439500"], ["id", 5]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 147ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/" for ::1 at 2019-04-09 12:35:43 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 5]]
+  [1m[36mTeam Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 1], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (1.4ms)
+  Rendered groups/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 53ms (Views: 48.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/groups/1" for ::1 at 2019-04-09 12:35:46 -0500
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "groups_users" ON "users"."id" = "groups_users"."user_id" WHERE "groups_users"."group_id" = $1[0m  [["group_id", 1]]
+  Rendered groups/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 65ms (Views: 60.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/groups" for ::1 at 2019-04-09 12:35:51 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 5]]
+  [1m[36mTeam Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 1], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (1.3ms)
+  Rendered groups/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 54ms (Views: 50.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/groups/1/generate_teams" for ::1 at 2019-04-09 12:35:57 -0500
+Processing by GroupsController#generate_teams as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/generate_teams.html.erb within layouts/application
+  Rendered groups/generate_teams.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 75ms (Views: 65.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.7.0" for ::1 at 2019-04-09 12:35:57 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff2"):
+  
+actionpack (5.1.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/fonts/fontawesome-webfont.woff?v=4.7.0" for ::1 at 2019-04-09 12:35:57 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"):
+  
+actionpack (5.1.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.7.0" for ::1 at 2019-04-09 12:35:58 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"):
+  
+actionpack (5.1.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started PATCH "/groups/1/run_sort" for ::1 at 2019-04-09 12:36:01 -0500
+Processing by GroupsController#run_sort as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hWz5V+/uf0GfQ/XAW5At86qHsftRNLNrTt7KthfDZi7TX76R8B3W++6+nvHFqXtrHCIidJ4dukdEK2b7JESO4A==", "group"=>{"team_size"=>"2"}, "commit"=>"Run Sort", "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/groups/1" for ::1 at 2019-04-09 12:39:34 -0500
+Completed 401 Unauthorized in 213159ms (ActiveRecord: 5.5ms)
+
+
+Started GET "/" for ::1 at 2019-04-09 12:40:25 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 5]]
+  [1m[36mTeam Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 1], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (19.4ms)
+  Rendered groups/index.html.erb within layouts/application (49.4ms)
+Completed 200 OK in 561ms (Views: 416.8ms | ActiveRecord: 21.4ms)
+
+
+Started GET "/groups/1" for ::1 at 2019-04-09 12:40:29 -0500
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "groups_users" ON "users"."id" = "groups_users"."user_id" WHERE "groups_users"."group_id" = $1[0m  [["group_id", 1]]
+  Rendered groups/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 89ms (Views: 83.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/groups" for ::1 at 2019-04-09 12:40:35 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 5]]
+  [1m[36mTeam Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 1], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (1.4ms)
+  Rendered groups/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 56ms (Views: 52.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/groups" for ::1 at 2019-04-09 12:40:37 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 5]]
+  [1m[36mTeam Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 1], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (1.3ms)
+  Rendered groups/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 73ms (Views: 69.3ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-04-09 12:40:39 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rd8KNWdFcnkeRKePJdUTGMDyUQ5k8GCuXLFspbZddlIpcIOqY7jjbHAyZZlWmVG9AgvdZaUZy0iO+toBP54a2Q=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-04-09 12:40:39 -0500
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-04-09 12:40:39 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 55ms (Views: 52.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-09 12:40:44 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb___676850299047895827_70283591514340 at /Users/holliewilson/Desktop/School/SPG19/CS3398/GitHub/CS3398-Romulans-S2019/team_sort/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (1.1ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 92ms (Views: 82.3ms | ActiveRecord: 9.0ms)
+
+
+Started POST "/users" for ::1 at 2019-04-09 12:41:18 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7k1Ku85kc2yrMBxeNKiRNMbNPFLHyj+0+kdY9eOJ3fPXmCb0FViRZsMURwBLhCf3E6T01d89gV6P4LIwrG8xtg==", "user"=>{"admin"=>"false", "first_name"=>"Test5", "last_name"=>"Student", "email"=>"student5@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"BnfgIX0H", "strength1"=>"21", "strength2"=>"19", "strength3"=>"10", "strength4"=>"13", "strength5"=>"26"}}
+  [1m[36mGroup Load (1.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "BnfgIX0H"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "student5@test.com"], ["LIMIT", 1]]
+  [1m[35mSQL (2.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "first_name", "last_name") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "student5@test.com"], ["encrypted_password", "$2a$11$uBKZdnebQsql8VVb.E/X..SVaeScBlPwbKTJ/9xn1hEERHlDACmRy"], ["created_at", "2019-04-09 17:41:18.859393"], ["updated_at", "2019-04-09 17:41:18.859393"], ["first_name", "Test5"], ["last_name", "Student"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "groups_users" ("user_id", "group_id") VALUES ($1, $2)[0m  [["user_id", 10], ["group_id", 1]]
+  [1m[35m (41.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStrength Load (0.4ms)[0m  [1m[34mSELECT  "strengths".* FROM "strengths" WHERE "strengths"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "strengths_users" ("user_id", "strength_id") VALUES ($1, $2)[0m  [["user_id", 10], ["strength_id", 21]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStrength Load (0.3ms)[0m  [1m[34mSELECT  "strengths".* FROM "strengths" WHERE "strengths"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "strengths_users" ("user_id", "strength_id") VALUES ($1, $2)[0m  [["user_id", 10], ["strength_id", 19]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStrength Load (0.3ms)[0m  [1m[34mSELECT  "strengths".* FROM "strengths" WHERE "strengths"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.3ms)[0m  [1m[32mINSERT INTO "strengths_users" ("user_id", "strength_id") VALUES ($1, $2)[0m  [["user_id", 10], ["strength_id", 10]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStrength Load (0.3ms)[0m  [1m[34mSELECT  "strengths".* FROM "strengths" WHERE "strengths"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "strengths_users" ("user_id", "strength_id") VALUES ($1, $2)[0m  [["user_id", 10], ["strength_id", 13]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStrength Load (0.3ms)[0m  [1m[34mSELECT  "strengths".* FROM "strengths" WHERE "strengths"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "strengths_users" ("user_id", "strength_id") VALUES ($1, $2)[0m  [["user_id", 10], ["strength_id", 26]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", "2019-04-09 17:41:18.942037"], ["last_sign_in_at", "2019-04-09 17:41:18.942037"], ["current_sign_in_ip", "::1"], ["last_sign_in_ip", "::1"], ["updated_at", "2019-04-09 17:41:18.942649"], ["id", 10]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/groups
+Completed 302 Found in 253ms (ActiveRecord: 58.3ms)
+
+
+Started GET "/groups" for ::1 at 2019-04-09 12:41:18 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mTeam Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" INNER JOIN "teams_users" ON "teams"."id" = "teams_users"."team_id" WHERE "teams_users"."user_id" = $1 LIMIT $2[0m  [["user_id", 10], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (2.1ms)
+  Rendered groups/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 61ms (Views: 51.2ms | ActiveRecord: 6.4ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-04-09 12:41:21 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iZxyQgm44hefDPWK0zqXkm3Q7JEXSeJD2ay9bdnEVOWwSR4N0oQAHfcortSsFiFRuLkkFg++XKmsC1eoliK4oA=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-04-09 12:41:21 -0500
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-04-09 12:41:21 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 61ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-09 12:41:24 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb___676850299047895827_70283580549300 at /Users/holliewilson/Desktop/School/SPG19/CS3398/GitHub/CS3398-Romulans-S2019/team_sort/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (1.4ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 56ms (Views: 53.4ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/users" for ::1 at 2019-04-09 12:41:56 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z1hQClvJB72VtZX9IyaRtpNhvGnTx5A3YR7R4IAuEbl1TL77TMnT9+UHlGHdMvBi0pHBbmPtXO9ZnY+R7GaQig==", "user"=>{"admin"=>"false", "first_name"=>"Test6", "last_name"=>"Student", "email"=>"student6@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"BnfgIX0H", "strength1"=>"27", "strength2"=>"28", "strength3"=>"30", "strength4"=>"6", "strength5"=>"9"}}
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "BnfgIX0H"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "student6@test.com"], ["LIMIT", 1]]
+  [1m[35mSQL (2.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "first_name", "last_name") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "student6@test.com"], ["encrypted_password", "$2a$11$Wg1ZUyarIbn83w99YJ4z7.p.m6t24JhmOhllfRADhD1nGly8YffN."], ["created_at", "2019-04-09 17:41:56.151009"], ["updated_at", "2019-04-09 17:41:56.151009"], ["first_name", "Test6"], ["last_name", "Student"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "groups_users" ("user_id", "group_id") VALUES ($1, $2)[0m  [["user_id", 11], ["group_id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStrength Load (0.3ms)[0m  [1m[34mSELECT  "strengths".* FROM "strengths" WHERE "strengths"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "strengths_users" ("user_id", "strength_id") VALUES ($1, $2)[0m  [["user_id", 11], ["strength_id", 27]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStrength Load (0.2ms)[0m  [1m[34mSELECT  "strengths".* FROM "strengths" WHERE "strengths"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "strengths_users" ("user_id", "strength_id") VALUES ($1, $2)[0m  [["user_id", 11], ["strength_id", 28]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStrength Load (0.2ms)[0m  [1m[34mSELECT  "strengths".* FROM "strengths" WHERE "strengths"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "strengths_users" ("user_id", "strength_id") VALUES ($1, $2)[0m  [["user_id", 11], ["strength_id", 30]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStrength Load (0.2ms)[0m  [1m[34mSELECT  "strengths".* FROM "strengths" WHERE "strengths"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "strengths_users" ("user_id", "strength_id") VALUES ($1, $2)[0m  [["user_id", 11], ["strength_id", 6]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStrength Load (0.2ms)[0m  [1m[34mSELECT  "strengths".* FROM "strengths" WHERE "strengths"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "strengths_users" ("user_id", "strength_id") VALUES ($1, $2)[0m  [["user_id", 11], ["strength_id", 9]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", "2019-04-09 17:41:56.172071"], ["last_sign_in_at", "2019-04-09 17:41:56.172071"], ["current_sign_in_ip", "::1"], ["last_sign_in_ip", "::1"], ["updated_at", "2019-04-09 17:41:56.172499"], ["id", 11]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/groups
+Completed 302 Found in 174ms (ActiveRecord: 9.6ms)
+
+
+Started GET "/groups" for ::1 at 2019-04-09 12:41:56 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mTeam Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" INNER JOIN "teams_users" ON "teams"."id" = "teams_users"."team_id" WHERE "teams_users"."user_id" = $1 LIMIT $2[0m  [["user_id", 11], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (1.4ms)
+  Rendered groups/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 70ms (Views: 66.8ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-04-09 12:41:58 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+NR8mWg3Ka4awldmNFJbCngKCEap3QGjsak59dBZT2LqwJJofzf95GpwVvrKRjreOfp1QRn3zXuJKmeEvBHOUQ=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-04-09 12:41:58 -0500
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-04-09 12:41:58 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 50ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-04-09 12:42:05 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AiIXo+gyt1t7n0vcXwjsqP5T5J+tMYIQ9zFQPj7cKYx/vrNWx95887MISw/jlrefIBl+sBXsxuhhR3vxB3yq6Q==", "user"=>{"email"=>"testcase1@test.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "testcase1@test.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2019-04-09 17:42:05.942982"], ["last_sign_in_at", "2019-04-09 17:35:43.438631"], ["sign_in_count", 6], ["updated_at", "2019-04-09 17:42:05.943796"], ["id", 5]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 150ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2019-04-09 12:42:05 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 5]]
+  [1m[36mTeam Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 1], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (1.4ms)
+  Rendered groups/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 68ms (Views: 64.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/groups/1" for ::1 at 2019-04-09 12:42:09 -0500
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "groups_users" ON "users"."id" = "groups_users"."user_id" WHERE "groups_users"."group_id" = $1[0m  [["group_id", 1]]
+  Rendered groups/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 52ms (Views: 47.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/groups" for ::1 at 2019-04-09 12:42:11 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 5]]
+  [1m[36mTeam Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 1], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (1.4ms)
+  Rendered groups/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 68ms (Views: 64.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/groups/1/generate_teams" for ::1 at 2019-04-09 12:42:19 -0500
+Processing by GroupsController#generate_teams as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/generate_teams.html.erb within layouts/application
+  Rendered groups/generate_teams.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 58ms (Views: 49.7ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/groups/1/run_sort" for ::1 at 2019-04-09 12:42:28 -0500
+Processing by GroupsController#run_sort as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ypVYMievoW03LfjktGAfzNRzYBLFBzNxdbIeO5kNqp7HOL05KLFmxS2w4Ddt7Vrb0wGRtwlfX3psBslXi5DoHw==", "group"=>{"team_size"=>"2"}, "commit"=>"Run Sort", "id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/groups/1/generate_teams" for ::1 at 2019-04-09 12:44:41 -0500
+Started GET "/groups" for ::1 at 2019-04-09 12:44:41 -0500
+Started GET "/groups" for ::1 at 2019-04-09 12:45:22 -0500
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.9ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 5]]
+  [1m[36mTeam Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 1], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (19.9ms)
+  Rendered groups/index.html.erb within layouts/application (52.0ms)
+Completed 200 OK in 564ms (Views: 421.3ms | ActiveRecord: 20.2ms)
+
+
+Started GET "/" for ::1 at 2019-04-09 12:45:26 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 5]]
+  [1m[36mTeam Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 1], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (1.8ms)
+  Rendered groups/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 93ms (Views: 89.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/groups/1/generate_teams" for ::1 at 2019-04-09 12:45:30 -0500
+Processing by GroupsController#generate_teams as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/generate_teams.html.erb within layouts/application
+  Rendered groups/generate_teams.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 64ms (Views: 54.2ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/groups/1/run_sort" for ::1 at 2019-04-09 12:45:33 -0500
+Processing by GroupsController#run_sort as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ez+b3A7CN6Oqte1+vWy55NTcdpQvJ/aezYplWAE6wHp2kn7XAdzwC7Ao9a1k4fzz066HMeN/mpXUPrI0E6eC+w==", "group"=>{"team_size"=>"3"}, "commit"=>"Run Sort", "id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "groups_users" ON "users"."id" = "groups_users"."user_id" WHERE "groups_users"."group_id" = $1 AND "users"."admin" = $2[0m  [["group_id", 1], ["admin", "f"]]
+  [1m[36mTeam Load (1.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "teams_users" ON "teams"."id" = "teams_users"."team_id" WHERE "teams_users"."user_id" = $1 AND "teams"."group_id" = $2[0m  [["user_id", 6], ["group_id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTeam Load (0.6ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "teams_users" ON "teams"."id" = "teams_users"."team_id" WHERE "teams_users"."user_id" = $1 AND "teams"."group_id" = $2[0m  [["user_id", 7], ["group_id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTeam Load (0.6ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "teams_users" ON "teams"."id" = "teams_users"."team_id" WHERE "teams_users"."user_id" = $1 AND "teams"."group_id" = $2[0m  [["user_id", 8], ["group_id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "teams_users" ON "teams"."id" = "teams_users"."team_id" WHERE "teams_users"."user_id" = $1 AND "teams"."group_id" = $2[0m  [["user_id", 9], ["group_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "teams_users" ON "teams"."id" = "teams_users"."team_id" WHERE "teams_users"."user_id" = $1 AND "teams"."group_id" = $2[0m  [["user_id", 10], ["group_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "teams_users" ON "teams"."id" = "teams_users"."team_id" WHERE "teams_users"."user_id" = $1 AND "teams"."group_id" = $2[0m  [["user_id", 11], ["group_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (62.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "groups_users" ON "users"."id" = "groups_users"."user_id" WHERE "groups_users"."group_id" = $1 AND "users"."admin" = $2[0m  [["group_id", 1], ["admin", "f"]]
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."group_id" = $1[0m  [["group_id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (39.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (8.7ms)[0m  [1m[32mINSERT INTO "teams" ("score", "created_at", "updated_at", "group_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["score", 0], ["created_at", "2019-04-09 17:46:43.543974"], ["updated_at", "2019-04-09 17:46:43.543974"], ["group_id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("score", "created_at", "updated_at", "group_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["score", 0], ["created_at", "2019-04-09 17:46:43.557715"], ["updated_at", "2019-04-09 17:46:43.557715"], ["group_id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 6]]
+  [1m[36mStrength Load (0.4ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 7]]
+  [1m[36mStrength Load (0.3ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 8]]
+  [1m[36mStrength Load (0.4ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 9]]
+  [1m[36mStrength Load (0.4ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 10]]
+  [1m[36mStrength Load (0.4ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 11]]
+  [1m[36mTeam Load (0.6ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."group_id" = $1 ORDER BY "teams"."score" ASC[0m  [["group_id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "teams_users" ON "users"."id" = "teams_users"."user_id" WHERE "teams_users"."team_id" = $1[0m  [["team_id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams_users" ("user_id", "team_id") VALUES ($1, $2)[0m  [["user_id", 11], ["team_id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "teams" SET "score" = $1, "updated_at" = $2 WHERE "teams"."id" = $3[0m  [["score", 1], ["updated_at", "2019-04-09 17:46:43.598266"], ["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."group_id" = $1 ORDER BY "teams"."score" ASC[0m  [["group_id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "teams_users" ON "users"."id" = "teams_users"."user_id" WHERE "teams_users"."team_id" = $1[0m  [["team_id", 2]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "teams_users" ("user_id", "team_id") VALUES ($1, $2)[0m  [["user_id", 6], ["team_id", 2]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "teams" SET "score" = $1, "updated_at" = $2 WHERE "teams"."id" = $3[0m  [["score", 1], ["updated_at", "2019-04-09 17:46:43.605930"], ["id", 2]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "teams_users" ON "users"."id" = "teams_users"."user_id" WHERE "teams_users"."team_id" = $1[0m  [["team_id", 1]]
+  [1m[36mStrength Load (0.2ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 11]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams_users" ("user_id", "team_id") VALUES ($1, $2)[0m  [["user_id", 8], ["team_id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "teams" SET "score" = $1, "updated_at" = $2 WHERE "teams"."id" = $3[0m  [["score", 2], ["updated_at", "2019-04-09 17:46:43.614606"], ["id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."group_id" = $1 ORDER BY "teams"."score" ASC[0m  [["group_id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "teams_users" ON "users"."id" = "teams_users"."user_id" WHERE "teams_users"."team_id" = $1[0m  [["team_id", 2]]
+  [1m[36mStrength Load (0.2ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 6]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "teams_users" ("user_id", "team_id") VALUES ($1, $2)[0m  [["user_id", 7], ["team_id", 2]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "teams" SET "score" = $1, "updated_at" = $2 WHERE "teams"."id" = $3[0m  [["score", 2], ["updated_at", "2019-04-09 17:46:43.623628"], ["id", 2]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "teams_users" ON "users"."id" = "teams_users"."user_id" WHERE "teams_users"."team_id" = $1[0m  [["team_id", 1]]
+  [1m[36mStrength Load (0.2ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 8]]
+  [1m[36mStrength Load (0.3ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 11]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "teams_users" ("user_id", "team_id") VALUES ($1, $2)[0m  [["user_id", 10], ["team_id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "teams" SET "score" = $1, "updated_at" = $2 WHERE "teams"."id" = $3[0m  [["score", 3], ["updated_at", "2019-04-09 17:46:43.632000"], ["id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTeam Load (0.6ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."group_id" = $1 ORDER BY "teams"."score" ASC[0m  [["group_id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "teams_users" ON "users"."id" = "teams_users"."user_id" WHERE "teams_users"."team_id" = $1[0m  [["team_id", 2]]
+  [1m[36mStrength Load (0.2ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 6]]
+  [1m[36mStrength Load (0.2ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 7]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "teams_users" ("user_id", "team_id") VALUES ($1, $2)[0m  [["user_id", 9], ["team_id", 2]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "teams" SET "score" = $1, "updated_at" = $2 WHERE "teams"."id" = $3[0m  [["score", 3], ["updated_at", "2019-04-09 17:46:43.642023"], ["id", 2]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."group_id" = $1 ORDER BY "teams"."score" ASC[0m  [["group_id", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "teams_users" ON "users"."id" = "teams_users"."user_id" WHERE "teams_users"."team_id" = $1[0m  [["team_id", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "teams_users" ON "users"."id" = "teams_users"."user_id" WHERE "teams_users"."team_id" = $1[0m  [["team_id", 2]]
+Redirected to http://localhost:3000/teams?group=1
+Completed 302 Found in 70398ms (ActiveRecord: 154.3ms)
+
+
+Started GET "/" for ::1 at 2019-04-09 12:48:26 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.8ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 5]]
+  [1m[36mTeam Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 1], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (23.5ms)
+  Rendered groups/index.html.erb within layouts/application (54.5ms)
+Completed 200 OK in 573ms (Views: 413.5ms | ActiveRecord: 21.2ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-04-09 12:48:32 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"PFa7Obz0Op49iNvQn/+1ZnIDv6s8D6Pb7RRP7F82jWinvlL0w2huRzoBJKp9rSlOQu3edphWgl2mKjps7lhHYg=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-04-09 12:48:32 -0500
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-04-09 12:48:32 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 84ms (Views: 82.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-09 12:48:35 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb___4462608166351735138_70315162020620 at /Users/holliewilson/Desktop/School/SPG19/CS3398/GitHub/CS3398-Romulans-S2019/team_sort/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (1.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (28.5ms)
+Completed 200 OK in 77ms (Views: 70.8ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-09 12:49:53 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb___4462608166351735138_70315152291740 at /Users/holliewilson/Desktop/School/SPG19/CS3398/GitHub/CS3398-Romulans-S2019/team_sort/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (0.7ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 78ms (Views: 76.7ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for ::1 at 2019-04-09 12:50:29 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4LrlDgIR7u0SHkJ6ztuWQU4OKmZu9Qi8XbKTDeHqLMiPAXdr4ECxSIB5xuOuj6ACT/TzBr4Rkp/iPD7GII3eZA==", "user"=>{"admin"=>"false", "first_name"=>"Test7", "last_name"=>"Student", "email"=>"student7@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"BnfgIX0H", "strength1"=>"27", "strength2"=>"4", "strength3"=>"14", "strength4"=>"12", "strength5"=>"8"}}
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "BnfgIX0H"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "student7@test.com"], ["LIMIT", 1]]
+  [1m[35mSQL (2.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "first_name", "last_name") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "student7@test.com"], ["encrypted_password", "$2a$11$0YeGBjuK4kx8Pfc/HydKEOWgtty4nx61BiN45UrQ76EjCriz8Q.9K"], ["created_at", "2019-04-09 17:50:30.120880"], ["updated_at", "2019-04-09 17:50:30.120880"], ["first_name", "Test7"], ["last_name", "Student"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "groups_users" ("user_id", "group_id") VALUES ($1, $2)[0m  [["user_id", 12], ["group_id", 1]]
+  [1m[35m (39.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStrength Load (0.3ms)[0m  [1m[34mSELECT  "strengths".* FROM "strengths" WHERE "strengths"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "strengths_users" ("user_id", "strength_id") VALUES ($1, $2)[0m  [["user_id", 12], ["strength_id", 27]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStrength Load (0.2ms)[0m  [1m[34mSELECT  "strengths".* FROM "strengths" WHERE "strengths"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "strengths_users" ("user_id", "strength_id") VALUES ($1, $2)[0m  [["user_id", 12], ["strength_id", 4]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStrength Load (0.3ms)[0m  [1m[34mSELECT  "strengths".* FROM "strengths" WHERE "strengths"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "strengths_users" ("user_id", "strength_id") VALUES ($1, $2)[0m  [["user_id", 12], ["strength_id", 14]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStrength Load (0.3ms)[0m  [1m[34mSELECT  "strengths".* FROM "strengths" WHERE "strengths"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "strengths_users" ("user_id", "strength_id") VALUES ($1, $2)[0m  [["user_id", 12], ["strength_id", 12]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStrength Load (0.2ms)[0m  [1m[34mSELECT  "strengths".* FROM "strengths" WHERE "strengths"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "strengths_users" ("user_id", "strength_id") VALUES ($1, $2)[0m  [["user_id", 12], ["strength_id", 8]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", "2019-04-09 17:50:30.197753"], ["last_sign_in_at", "2019-04-09 17:50:30.197753"], ["current_sign_in_ip", "::1"], ["last_sign_in_ip", "::1"], ["updated_at", "2019-04-09 17:50:30.198276"], ["id", 12]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/groups
+Completed 302 Found in 247ms (ActiveRecord: 52.8ms)
+
+
+Started GET "/groups" for ::1 at 2019-04-09 12:50:30 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mTeam Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" INNER JOIN "teams_users" ON "teams"."id" = "teams_users"."team_id" WHERE "teams_users"."user_id" = $1 LIMIT $2[0m  [["user_id", 12], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (1.5ms)
+  Rendered groups/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 80ms (Views: 71.4ms | ActiveRecord: 6.1ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-04-09 12:50:34 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"BVelSJD/cpUU+cWZxUCydtP8yJuG/nLIT3+YYNjmovdq7Dctcq4tMIaeQQClFIQ10gYR+1Ya6Ovw8TWrGYFQWw=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-04-09 12:50:34 -0500
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-04-09 12:50:34 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 64ms (Views: 62.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-04-09 12:50:40 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"g59VygqoYO6O/b7j6/+X3iRNKz3swdzMDDbp/j3RqEXQYd0twA0Czaf9Y/IQr2D1BJDRvgGp0MoXzYDGpfSnag==", "user"=>{"email"=>"testcase1@test.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "testcase1@test.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2019-04-09 17:50:40.562607"], ["last_sign_in_at", "2019-04-09 17:42:05.942982"], ["sign_in_count", 7], ["updated_at", "2019-04-09 17:50:40.563529"], ["id", 5]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 149ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2019-04-09 12:50:40 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 5]]
+  [1m[36mTeam Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 1], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (1.4ms)
+  Rendered groups/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 56ms (Views: 53.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/groups/1" for ::1 at 2019-04-09 12:50:42 -0500
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "groups_users" ON "users"."id" = "groups_users"."user_id" WHERE "groups_users"."group_id" = $1[0m  [["group_id", 1]]
+  Rendered groups/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 73ms (Views: 67.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/groups" for ::1 at 2019-04-09 12:50:50 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 5]]
+  [1m[36mTeam Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 1], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (1.4ms)
+  Rendered groups/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 54ms (Views: 50.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/teams?group=1" for ::1 at 2019-04-09 12:50:57 -0500
+Processing by TeamsController#index as HTML
+  Parameters: {"group"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."group_id" = $1[0m  [["group_id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "teams_users" ON "users"."id" = "teams_users"."user_id" WHERE "teams_users"."team_id" = $1[0m  [["team_id", 1]]
+  [1m[36mStrength Load (0.4ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 8]]
+  [1m[36mStrength Load (0.4ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 10]]
+  [1m[36mStrength Load (0.3ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 11]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "teams_users" ON "users"."id" = "teams_users"."user_id" WHERE "teams_users"."team_id" = $1[0m  [["team_id", 2]]
+  [1m[36mStrength Load (0.3ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 6]]
+  [1m[36mStrength Load (0.3ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 7]]
+  [1m[36mStrength Load (0.4ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 9]]
+  [1m[36mStrength Load (0.5ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."domain" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."domain" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."domain" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."domain" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."domain" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."domain" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."domain" ASC[0m
+  Rendered teams/index.html.erb within layouts/application (27.8ms)
+Completed 200 OK in 89ms (Views: 81.6ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/" for ::1 at 2019-04-09 12:51:17 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 5]]
+  [1m[36mTeam Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 1], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (1.4ms)
+  Rendered groups/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 55ms (Views: 51.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/groups/1/edit" for ::1 at 2019-04-09 12:51:21 -0500
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/edit.html.erb within layouts/application
+  Rendered groups/edit.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 71ms (Views: 62.7ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/groups/1" for ::1 at 2019-04-09 12:51:23 -0500
+Processing by GroupsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PhbJ0nF/84kJQleC3JeVySYlsT2qrIWdChGLUSH2rf6eKErSBHMI8RvlUYVYrMzhuiB3qCH2e2XYNVldiRWO1A==", "group"=>{"title"=>"TestTeam", "hide_results"=>"0"}, "commit"=>"Save Changes", "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2019-04-09 12:51:23 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 5]]
+  [1m[36mTeam Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 1], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (1.3ms)
+  Rendered groups/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 56ms (Views: 51.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/teams?group=1" for ::1 at 2019-04-09 12:51:26 -0500
+Processing by TeamsController#index as HTML
+  Parameters: {"group"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."group_id" = $1[0m  [["group_id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "teams_users" ON "users"."id" = "teams_users"."user_id" WHERE "teams_users"."team_id" = $1[0m  [["team_id", 1]]
+  [1m[36mStrength Load (0.2ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 8]]
+  [1m[36mStrength Load (0.3ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 10]]
+  [1m[36mStrength Load (0.3ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 11]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "teams_users" ON "users"."id" = "teams_users"."user_id" WHERE "teams_users"."team_id" = $1[0m  [["team_id", 2]]
+  [1m[36mStrength Load (0.2ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 6]]
+  [1m[36mStrength Load (0.2ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 7]]
+  [1m[36mStrength Load (0.2ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 9]]
+  [1m[36mStrength Load (0.4ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."domain" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."domain" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."domain" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."domain" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."domain" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."domain" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."domain" ASC[0m
+  Rendered teams/index.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 79ms (Views: 72.4ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/teams?group=1" for ::1 at 2019-04-09 12:51:34 -0500
+Processing by TeamsController#index as HTML
+  Parameters: {"group"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."group_id" = $1[0m  [["group_id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "teams_users" ON "users"."id" = "teams_users"."user_id" WHERE "teams_users"."team_id" = $1[0m  [["team_id", 1]]
+  [1m[36mStrength Load (0.2ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 8]]
+  [1m[36mStrength Load (0.2ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 10]]
+  [1m[36mStrength Load (0.2ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 11]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "teams_users" ON "users"."id" = "teams_users"."user_id" WHERE "teams_users"."team_id" = $1[0m  [["team_id", 2]]
+  [1m[36mStrength Load (0.3ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 6]]
+  [1m[36mStrength Load (0.2ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 7]]
+  [1m[36mStrength Load (0.2ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 9]]
+  [1m[36mStrength Load (0.4ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."domain" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."domain" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."domain" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."domain" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."domain" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."domain" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."domain" ASC[0m
+  Rendered teams/index.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 72ms (Views: 65.3ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/users/edit" for ::1 at 2019-04-09 12:51:36 -0500
+Processing by RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_registrations_edit_html_erb___3441120327747608710_70315218910000 at /Users/holliewilson/Desktop/School/SPG19/CS3398/GitHub/CS3398-Romulans-S2019/team_sort/app/views/devise/registrations/edit.html.erb:69)
+  [1m[36mStrength Load (0.3ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 5]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (15.8ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    76: 
+    77:             <div class="col-lg-6">
+    78:               <div class="form-group">
+    79:                 <%= f.collection_select :strength1, Strength.order(:name),:id,:name, {selected: resource.strengths[0].id}, {class: 'form-control', required: true} %>
+    80:               </div>
+    81: 
+    82:               <div class="form-group">
+  
+app/views/devise/registrations/edit.html.erb:79:in `block in _app_views_devise_registrations_edit_html_erb___3441120327747608710_70315218910000'
+app/views/devise/registrations/edit.html.erb:68:in `_app_views_devise_registrations_edit_html_erb___3441120327747608710_70315218910000'
+Started GET "/" for ::1 at 2019-04-09 12:51:42 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 5]]
+  [1m[36mTeam Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 1], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (1.4ms)
+  Rendered groups/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 70ms (Views: 65.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/groups/1" for ::1 at 2019-04-09 12:51:46 -0500
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "groups_users" ON "users"."id" = "groups_users"."user_id" WHERE "groups_users"."group_id" = $1[0m  [["group_id", 1]]
+  Rendered groups/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 50ms (Views: 45.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/groups" for ::1 at 2019-04-09 12:51:48 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 5]]
+  [1m[36mTeam Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 1], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (1.3ms)
+  Rendered groups/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 67ms (Views: 63.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/teams?group=1" for ::1 at 2019-04-09 12:51:59 -0500
+Processing by TeamsController#index as HTML
+  Parameters: {"group"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."group_id" = $1[0m  [["group_id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "teams_users" ON "users"."id" = "teams_users"."user_id" WHERE "teams_users"."team_id" = $1[0m  [["team_id", 1]]
+  [1m[36mStrength Load (0.3ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 8]]
+  [1m[36mStrength Load (0.3ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 10]]
+  [1m[36mStrength Load (0.3ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 11]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "teams_users" ON "users"."id" = "teams_users"."user_id" WHERE "teams_users"."team_id" = $1[0m  [["team_id", 2]]
+  [1m[36mStrength Load (0.2ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 6]]
+  [1m[36mStrength Load (0.3ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 7]]
+  [1m[36mStrength Load (0.2ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" INNER JOIN "strengths_users" ON "strengths"."id" = "strengths_users"."strength_id" WHERE "strengths_users"."user_id" = $1[0m  [["user_id", 9]]
+  [1m[36mStrength Load (0.4ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."domain" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."domain" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."domain" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."domain" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."domain" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."domain" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."domain" ASC[0m
+  Rendered teams/index.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 68ms (Views: 61.6ms | ActiveRecord: 3.7ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-04-09 12:52:28 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"OZ8P2kJHj9FgPnFzGTzVSM9ZgGRgf0cZ5vemTP3rVcBQ6Uio7TgIZPXrjv2xd5HClH7Z6QkRFm7CO4m11tcaDg=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-04-09 12:52:28 -0500
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-04-09 12:52:28 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 61ms (Views: 60.5ms | ActiveRecord: 0.0ms)
+
+
