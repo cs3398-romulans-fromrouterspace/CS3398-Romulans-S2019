@@ -22,6 +22,7 @@ Austin:
 
 Hollie:
 	Modified html in team_sort/app/views/registrations/new.html.erb to add password requirements for user registration. Password requirements are currently only 6-character minimum. Requirements are now shown to user upon registration. Hollie's sprint was completed successfully. For the next sprint Hollie will work on adding an error message when the passwords entered in registration do not match.
+	Modified javascript sect in team_sort/app/views/registrations/new.html.erb to add an error message when the passwords entered do not match. Error message successfully added but with bugs. Debugging took longer than estimated and was unable to move forward with second task. For the next sprint Hollie will continue to debug password entry as well as work on modifying password retrieval page.
 
 William:
     Messed around with the UI appearance of the log in button, and made it slightly bigger in size. Also messed around with background color, but no changes were pushed as the color wasn't yet decided by the team. A majority amount of this sprint's time frame was spent around learning ruby, and getting a working environment set up on Windows. Future steps will include modifying the UI further, upon team vote. 
