@@ -1,7 +1,18 @@
 <%= form_for @group do |f| %>
+  <style>
+    .modal-content{
+      background-color: #f2f5f8;
+    }
+    .modal-header{
+      background-color: #ffffff;
+    }
+    .modal-rooter{
+      background-color: #f2f5f8;
+    }
+  </style>
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-    <h4 class="modal-title" id="myModalLabel">Edit Group</h4>
+    <h4 class="modal-title" id="myModalLabel"><font color = "23527C"><strong>Edit Group</strong></font></h4>
   </div>
   <div class="modal-body">
     <% if @group.errors.any? %>
