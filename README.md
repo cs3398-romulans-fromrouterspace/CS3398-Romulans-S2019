@@ -16,7 +16,6 @@ To get the code running you need to have ruby on rails installed as well as a da
 
 Kendra:
     Added a button for the admin in team_sort/app/views/groups/index.html for editing teams. Also changed previous sort button  to a different icon located in the same file. The edit teams button will pull all teams/ team members and allow the admin to make changes to the team such as delete member or move a member to a different team. Kendra was not able to get this functionally in this sprint as it is a huge learning curve, having never worked with Ruby. For the next sprint Kendra will work on adding functionally to this button.
-
     For sprint 2, Kendra ran into issues with the database not loading the strengths and could not work on the admin center. I went and found the database was missing the strengths entirely. I tried to back up my database from the original and this did not work. I worked from http://www.postgresqltutorial.com/postgresql-show-databases/ to figure out how to access the database and found that all the strengths information was missing. I was able to repopulate the database eventually by running commands to reset my database. For Sprint 3, I will focus on trying to get the admin portal edit button to pull from the database and show the team member and allow the admin to edit them.
 
 Austin:
