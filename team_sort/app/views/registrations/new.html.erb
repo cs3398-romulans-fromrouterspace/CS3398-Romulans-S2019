@@ -203,19 +203,21 @@
   }
 
   // make sure the password confirmation matches the password
-  var password = document.getElementById("user_password");
-  var confirm_password = document.getElementById("user_password_confirmation");
+  $("#checkout").on("click", function validatePassword() {
+      $("#call-to-action").submit();
 
-  function validatePassword(){
-    if(password.value != confirm_password.value) {
-      confirm_password.setCustomValidity("Passwords Don't Match");
-    } else {
-      confirm_password.setCustomValidity('');
-    }
-  }
+      var password = document.getElementById('user_password');
+      var confirm_password = document.getElementById('user_password_confirmation');
+      
+      if (password.value !== confirm_password.value) {
+          confirm_password.setCustomValidity("Passwords Don't Match");
+      } else {
+          confirm_password.setCustomValidity("")
+      }
+  });
 
-//  password.onchange = validatePassword;
-//  confirm_password.onkeyup = validatePassword;
+  //  password.onchange = validatePassword;
+  //  confirm_password.onkeyup = validatePassword;
 
 </script>
 
