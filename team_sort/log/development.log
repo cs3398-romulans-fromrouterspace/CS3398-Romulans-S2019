@@ -9641,3 +9641,342 @@ To customize the errors styles please run `rails g devise:views` and modify the
 Completed 200 OK in 51ms (Views: 49.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/users/sign_in" for ::1 at 2019-04-25 12:04:01 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 83ms (Views: 80.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2019-04-25 12:04:03 -0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_passwords_new_html_erb__2304834074695633145_70124464085600 at /Users/holliewilson/Desktop/School/SPG19/CS3398/GitHub/CS3398-Romulans-S2019/team_sort/app/views/devise/passwords/new.html.erb:4)
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 51ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-04-25 12:04:05 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 68ms (Views: 67.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2019-04-25 12:04:07 -0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_passwords_new_html_erb__2304834074695633145_70124464199400 at /Users/holliewilson/Desktop/School/SPG19/CS3398/GitHub/CS3398-Romulans-S2019/team_sort/app/views/devise/passwords/new.html.erb:4)
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 51ms (Views: 50.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-04-25 12:04:08 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 62ms (Views: 61.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2019-04-25 12:04:09 -0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_passwords_new_html_erb__2304834074695633145_70124459775300 at /Users/holliewilson/Desktop/School/SPG19/CS3398/GitHub/CS3398-Romulans-S2019/team_sort/app/views/devise/passwords/new.html.erb:4)
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 52ms (Views: 50.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-04-25 12:04:10 -0500
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb___287289147146262109_70124393591700 at /Users/holliewilson/Desktop/School/SPG19/CS3398/GitHub/CS3398-Romulans-S2019/team_sort/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (1.3ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 63ms (Views: 60.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2019-04-25 12:04:12 -0500
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-04-25 12:04:12 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 61ms (Views: 60.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2019-04-25 12:04:13 -0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_passwords_new_html_erb__2304834074695633145_70124395537700 at /Users/holliewilson/Desktop/School/SPG19/CS3398/GitHub/CS3398-Romulans-S2019/team_sort/app/views/devise/passwords/new.html.erb:4)
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 51ms (Views: 49.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-25 12:08:42 -0500
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-04-25 12:08:42 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 86ms (Views: 84.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2019-04-25 12:08:44 -0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_passwords_new_html_erb__2304834074695633145_70124411414340 at /Users/holliewilson/Desktop/School/SPG19/CS3398/GitHub/CS3398-Romulans-S2019/team_sort/app/views/devise/passwords/new.html.erb:4)
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 52ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-25 15:41:57 -0500
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 14ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-04-25 15:41:58 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 773ms (Views: 726.6ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-04-25 15:41:59 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 81ms (Views: 79.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2019-04-25 15:43:08 -0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_passwords_new_html_erb___1756274814440415324_70277582104820 at /Users/holliewilson/Desktop/School/SPG19/CS3398/GitHub/CS3398-Romulans-S2019/team_sort/app/views/devise/passwords/new.html.erb:4)
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 50ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2019-04-25 15:43:16 -0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_passwords_new_html_erb___1756274814440415324_70277539112280 at /Users/holliewilson/Desktop/School/SPG19/CS3398/GitHub/CS3398-Romulans-S2019/team_sort/app/views/devise/passwords/new.html.erb:4)
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 66ms (Views: 64.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-04-25 15:43:17 -0500
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__961431423949621486_70277528433420 at /Users/holliewilson/Desktop/School/SPG19/CS3398/GitHub/CS3398-Romulans-S2019/team_sort/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (1.1ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 73ms (Views: 66.4ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/" for ::1 at 2019-04-25 15:43:20 -0500
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-04-25 15:43:20 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 50ms (Views: 49.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2019-04-25 15:43:21 -0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_passwords_new_html_erb___1756274814440415324_70277525879900 at /Users/holliewilson/Desktop/School/SPG19/CS3398/GitHub/CS3398-Romulans-S2019/team_sort/app/views/devise/passwords/new.html.erb:4)
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 64ms (Views: 62.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-04-25 15:43:25 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 49ms (Views: 47.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2019-04-25 15:43:31 -0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_passwords_new_html_erb___1756274814440415324_70277583224580 at /Users/holliewilson/Desktop/School/SPG19/CS3398/GitHub/CS3398-Romulans-S2019/team_sort/app/views/devise/passwords/new.html.erb:4)
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 48ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2019-04-25 16:35:52 -0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_passwords_new_html_erb___1756274814440415324_70277536172400 at /Users/holliewilson/Desktop/School/SPG19/CS3398/GitHub/CS3398-Romulans-S2019/team_sort/app/views/devise/passwords/new.html.erb:4)
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 249ms (Views: 109.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2019-04-25 16:37:17 -0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_passwords_new_html_erb___1756274814440415324_70277581774360 at /Users/holliewilson/Desktop/School/SPG19/CS3398/GitHub/CS3398-Romulans-S2019/team_sort/app/views/devise/passwords/new.html.erb:4)
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 72ms (Views: 70.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2019-04-25 16:37:33 -0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_passwords_new_html_erb___1756274814440415324_70277530519940 at /Users/holliewilson/Desktop/School/SPG19/CS3398/GitHub/CS3398-Romulans-S2019/team_sort/app/views/devise/passwords/new.html.erb:4)
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 89ms (Views: 87.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2019-04-25 16:39:14 -0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_passwords_new_html_erb___1756274814440415324_70277564157540 at /Users/holliewilson/Desktop/School/SPG19/CS3398/GitHub/CS3398-Romulans-S2019/team_sort/app/views/devise/passwords/new.html.erb:4)
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 94ms (Views: 92.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2019-04-25 16:41:32 -0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_passwords_new_html_erb___1756274814440415324_70277582360860 at /Users/holliewilson/Desktop/School/SPG19/CS3398/GitHub/CS3398-Romulans-S2019/team_sort/app/views/devise/passwords/new.html.erb:4)
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 72ms (Views: 70.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2019-04-25 16:43:20 -0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_passwords_new_html_erb___1756274814440415324_70277568532100 at /Users/holliewilson/Desktop/School/SPG19/CS3398/GitHub/CS3398-Romulans-S2019/team_sort/app/views/devise/passwords/new.html.erb:4)
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 80ms (Views: 78.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2019-04-25 16:44:15 -0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_passwords_new_html_erb___1756274814440415324_70277547611440 at /Users/holliewilson/Desktop/School/SPG19/CS3398/GitHub/CS3398-Romulans-S2019/team_sort/app/views/devise/passwords/new.html.erb:4)
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 62ms (Views: 61.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2019-04-25 16:44:59 -0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_passwords_new_html_erb___1756274814440415324_70277526084660 at /Users/holliewilson/Desktop/School/SPG19/CS3398/GitHub/CS3398-Romulans-S2019/team_sort/app/views/devise/passwords/new.html.erb:4)
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 49ms (Views: 47.7ms | ActiveRecord: 0.0ms)
+
+
