@@ -1,6 +1,5 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-
   # Code is not reloaded between requests.
   config.cache_classes = true
 
@@ -100,3 +99,5 @@ Rails.application.configure do
       :password => '11ZBD9GwZIm1'
   }
 end
+
+  server '68.183.153.53', user: 'deploy', roles: %w{app db web}
