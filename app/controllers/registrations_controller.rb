@@ -41,11 +41,14 @@ class RegistrationsController < Devise::RegistrationsController
         resource.errors.full_messages.each {|x| flash[x] = x} # Rails 4 simple way
       end
     else
+
       clean_up_passwords resource
       resource.errors.full_messages.each {|x| flash[x] = x} # Rails 4 simple way
+      # this is the catch block for wrong groupcode
+      redirect_to '/users/sign_up?admin=false'
+      
     end
   end
-
   def update
     self.resource = resource_class.to_adapter.get!(send(:"current_#{resource_name}").to_key)
     prev_unconfirmed_email = resource.unconfirmed_email if resource.respond_to?(:unconfirmed_email)

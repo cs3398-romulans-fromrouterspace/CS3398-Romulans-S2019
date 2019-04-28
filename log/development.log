@@ -9980,3 +9980,2441 @@ To customize the errors styles please run `rails g devise:views` and modify the
 Completed 200 OK in 49ms (Views: 47.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-04-28 12:17:12 -0500
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 10ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-04-28 12:17:12 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 1159ms (Views: 1084.3ms | ActiveRecord: 25.0ms)
+
+
+Started GET "/users/sign_up?admin=true" for ::1 at 2019-04-28 12:17:34 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"true"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269261247900 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (25.5ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.1ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (69.9ms)
+Started GET "/users/sign_up?admin=true" for ::1 at 2019-04-28 12:17:34 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"true"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269307230900 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (1.7ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.1ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (81.5ms)
+Completed 200 OK in 269ms (Views: 236.4ms | ActiveRecord: 31.0ms)
+
+
+Completed 200 OK in 217ms (Views: 157.7ms | ActiveRecord: 57.8ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 12:17:49 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DG6AuWkvacgY8syLpZ6XrGQeYQBHuyzgh8Y2f5NM21m0J4Cx8UDySoCnU8MkBvZnjSTyS1DO/zayRqS4IWVl8g==", "user"=>{"admin"=>"true", "first_name"=>"austin", "last_name"=>"boston", "email"=>"ab@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"", "strength1"=>"", "strength2"=>"", "strength3"=>"", "strength4"=>"", "strength5"=>""}}
+  [1m[36mGroup Load (13.3ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", ""], ["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (2.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ab@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (7.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "admin", "first_name", "last_name") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "ab@gmail.com"], ["encrypted_password", "$2a$11$Dc8ToldY6y/H7EFDyQsGseSQPz3pQLi5D6Q/z8CL5BEYscfEzhuDS"], ["created_at", "2019-04-28 17:17:49.887128"], ["updated_at", "2019-04-28 17:17:49.887128"], ["admin", "t"], ["first_name", "austin"], ["last_name", "boston"]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", "2019-04-28 17:17:49.898241"], ["last_sign_in_at", "2019-04-28 17:17:49.898241"], ["current_sign_in_ip", "::1"], ["last_sign_in_ip", "::1"], ["updated_at", "2019-04-28 17:17:49.898916"], ["id", 8]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/groups
+Completed 302 Found in 209ms (ActiveRecord: 35.0ms)
+
+
+Started GET "/groups" for ::1 at 2019-04-28 12:17:49 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (1.7ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 8]]
+  Rendered groups/_form.html.erb (5.1ms)
+  Rendered groups/index.html.erb within layouts/application (33.9ms)
+Completed 200 OK in 147ms (Views: 112.3ms | ActiveRecord: 11.5ms)
+
+
+Started POST "/groups" for ::1 at 2019-04-28 12:18:01 -0500
+Processing by GroupsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wTZvjIEJ8miHzHksgzEst4iaPUqMc3fqyyZESzC4qK15f2+EGWZp6h+Z5mQCqU18YaCuAZsGpDz+ptaMgpEWBg==", "group"=>{"title"=>"boo", "hide_results"=>"0"}, "commit"=>"Save"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "groups" ("title", "code", "created_at", "updated_at", "hide_results") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "boo"], ["code", "tkrD87SH"], ["created_at", "2019-04-28 17:18:01.908230"], ["updated_at", "2019-04-28 17:18:01.908230"], ["hide_results", "f"]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "groups_users" ("user_id", "group_id") VALUES ($1, $2)[0m  [["user_id", 8], ["group_id", 19]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/groups
+Completed 302 Found in 17ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/groups" for ::1 at 2019-04-28 12:18:01 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 8]]
+  [1m[36mTeam Exists (1.3ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 19], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (1.5ms)
+  Rendered groups/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 83ms (Views: 73.1ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/groups" for ::1 at 2019-04-28 12:18:04 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 8]]
+  [1m[36mTeam Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 19], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (1.3ms)
+  Rendered groups/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 87ms (Views: 82.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/groups" for ::1 at 2019-04-28 12:18:28 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 8]]
+  [1m[36mTeam Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 19], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (2.3ms)
+  Rendered groups/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 98ms (Views: 94.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/groups" for ::1 at 2019-04-28 12:18:30 -0500
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (1.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups" INNER JOIN "groups_users" ON "groups"."id" = "groups_users"."group_id" WHERE "groups_users"."user_id" = $1[0m  [["user_id", 8]]
+  [1m[36mTeam Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."group_id" = $1 LIMIT $2[0m  [["group_id", 19], ["LIMIT", 1]]
+  Rendered groups/_form.html.erb (1.5ms)
+  Rendered groups/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 100ms (Views: 95.1ms | ActiveRecord: 2.1ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-04-28 12:18:37 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"w1GTeEAgVQ7OX+6OpG4L1AEr2bWLPFeuiqnj+ZW2Thp7GJNw2E/OjFYKccYl9mof6BFK/pxJhHi/KXE+J5/wsQ=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2019-04-28 12:18:37 -0500
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-04-28 12:18:37 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 94ms (Views: 92.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 12:18:40 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269293387440 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (0.5ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 92ms (Views: 90.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 12:19:03 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SOnGlZuYMCYQlQY8fvbtk5qImdrpSYAkZSHMV776xgM5zRWI4N7WGwBBDtpnBWPTz+4dLhEbi3qAyRHVH+ZIiA==", "user"=>{"admin"=>"false", "first_name"=>"austin", "last_name"=>"koston", "email"=>"bc@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"12341234", "strength1"=>"1", "strength2"=>"1", "strength3"=>"7", "strength4"=>"22", "strength5"=>"15"}}
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "12341234"], ["LIMIT", 1]]
+No template found for RegistrationsController#create, rendering head :no_content
+Completed 204 No Content in 197ms (ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 12:22:28 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SOnGlZuYMCYQlQY8fvbtk5qImdrpSYAkZSHMV776xgM5zRWI4N7WGwBBDtpnBWPTz+4dLhEbi3qAyRHVH+ZIiA==", "user"=>{"admin"=>"false", "first_name"=>"austin", "last_name"=>"koston", "email"=>"bc@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"1234123", "strength1"=>"1", "strength2"=>"1", "strength3"=>"7", "strength4"=>"22", "strength5"=>"15"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "1234123"], ["LIMIT", 1]]
+No template found for RegistrationsController#create, rendering head :no_content
+Completed 204 No Content in 182ms (ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 12:22:39 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SOnGlZuYMCYQlQY8fvbtk5qImdrpSYAkZSHMV776xgM5zRWI4N7WGwBBDtpnBWPTz+4dLhEbi3qAyRHVH+ZIiA==", "user"=>{"admin"=>"false", "first_name"=>"austin", "last_name"=>"koston", "email"=>"bc@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"1", "strength3"=>"7", "strength4"=>"22", "strength5"=>"15"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+No template found for RegistrationsController#create, rendering head :no_content
+Completed 204 No Content in 197ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-04-28 12:36:52 -0500
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-04-28 12:36:52 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 85ms (Views: 64.4ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 12:36:55 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269269108300 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (0.7ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.1ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.1ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (43.0ms)
+Completed 200 OK in 132ms (Views: 123.0ms | ActiveRecord: 8.1ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 12:37:14 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rHaHPMJqk8iPvnhzUi89xYdGX61JIPSTYpq1nd1alyndUlQhuSx19Z9qcJVL3LOF0iDbWbFy/82HcmgffEYZog==", "user"=>{"admin"=>"false", "first_name"=>"austin", "last_name"=>"medrano", "email"=>"asjm@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"15", "strength3"=>"5", "strength4"=>"7", "strength5"=>"22"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+No template found for RegistrationsController#create, rendering head :no_content
+Completed 204 No Content in 193ms (ActiveRecord: 5.4ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 12:39:18 -0500
+  
+SyntaxError (/Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/controllers/registrations_controller.rb:49: else without rescue is useless):
+  
+app/controllers/registrations_controller.rb:49: else without rescue is useless
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 12:40:00 -0500
+  
+SyntaxError (/Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/controllers/registrations_controller.rb:49: else without rescue is useless):
+  
+app/controllers/registrations_controller.rb:49: else without rescue is useless
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 12:40:41 -0500
+  
+SyntaxError (/Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/controllers/registrations_controller.rb:49: else without rescue is useless
+/Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/controllers/registrations_controller.rb:106: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/registrations_controller.rb:49: else without rescue is useless
+app/controllers/registrations_controller.rb:106: syntax error, unexpected end, expecting end-of-input
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 12:40:43 -0500
+  
+SyntaxError (/Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/controllers/registrations_controller.rb:49: else without rescue is useless
+/Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/controllers/registrations_controller.rb:106: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/registrations_controller.rb:49: else without rescue is useless
+app/controllers/registrations_controller.rb:106: syntax error, unexpected end, expecting end-of-input
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 12:41:03 -0500
+  
+SyntaxError (/Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/controllers/registrations_controller.rb:48: else without rescue is useless
+  else
+  ^~~~):
+  
+app/controllers/registrations_controller.rb:48: else without rescue is useless
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 12:41:31 -0500
+  
+SyntaxError (/Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/controllers/registrations_controller.rb:48: else without rescue is useless
+  else
+  ^~~~
+/Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/controllers/registrations_controller.rb:106: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/registrations_controller.rb:48: else without rescue is useless
+app/controllers/registrations_controller.rb:106: syntax error, unexpected end, expecting end-of-input
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 12:42:05 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269307733720 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (37.7ms)
+Completed 200 OK in 112ms (Views: 82.7ms | ActiveRecord: 11.8ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 12:44:36 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/tfkurKDRJxmJf9bQGQjEY3rVmqDle4PAGMDfCcOmT+P8zenycWioXbx971Zl61R2I3SnnvH5VHli97+hhIXtA==", "user"=>{"admin"=>"false", "first_name"=>"austin", "last_name"=>"medrano", "email"=>"ajm230@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"12341234", "strength1"=>"1", "strength2"=>"15", "strength3"=>"5", "strength4"=>"7", "strength5"=>"22"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "12341234"], ["LIMIT", 1]]
+No template found for RegistrationsController#create, rendering head :no_content
+Completed 204 No Content in 195ms (ActiveRecord: 6.1ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 12:48:58 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269268361640 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (29.1ms)
+Completed 200 OK in 135ms (Views: 85.4ms | ActiveRecord: 14.2ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 12:49:22 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ShuoRN1YOAUC9v72jNaaXHMcYabJIaugR2nwwVRcBY87P3tZph7eOBIi9hCVJRQcJnrlUjFzoP6igS1D9UCLBA==", "user"=>{"admin"=>"false", "first_name"=>"austin", "last_name"=>"medrano", "email"=>"ajm230@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"7", "strength3"=>"22", "strength4"=>"11", "strength5"=>"17"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+No template found for RegistrationsController#create, rendering head :no_content
+Completed 204 No Content in 197ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 12:50:08 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269268873920 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (0.7ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (30.1ms)
+Completed 200 OK in 188ms (Views: 153.8ms | ActiveRecord: 17.2ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 12:50:36 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AnfEo3wNKg/5w+PWZxu+7AJtDE2b9d1wCNWTIrpSlMtzUxe+B0vMMukX6zB+6DCsVwuIuWOn1i7tPU6gG04aQA==", "user"=>{"admin"=>"false", "first_name"=>"austin", "last_name"=>"medrano", "email"=>"ajm230@gmai.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"15", "strength3"=>"5", "strength4"=>"17", "strength5"=>"22"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Redirected to 
+Completed 500 Internal Server Error in 352ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `code_url' for #<RegistrationsController:0x00007fd1b22ab1e8>):
+  
+app/controllers/registrations_controller.rb:47:in `create'
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 12:54:15 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269268760560 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (0.7ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 108ms (Views: 79.1ms | ActiveRecord: 14.1ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 12:54:34 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sX5gjfrcJAjeqFoaAXSToiFJgiOm3avPhFhWBBXF+LLAWrOQgZrCNc58UvwYhx3idC8G116PoJFhsIuGtNl2OQ==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"m", "email"=>"a@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"5", "strength3"=>"11", "strength4"=>"11", "strength5"=>"12"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 143ms (ActiveRecord: 0.4ms)
+
+
+  
+ArgumentError (too few arguments):
+  
+app/controllers/registrations_controller.rb:48:in `format'
+app/controllers/registrations_controller.rb:48:in `create'
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 12:58:17 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269259396480 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (0.7ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (27.4ms)
+Completed 200 OK in 147ms (Views: 91.0ms | ActiveRecord: 15.5ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 12:58:37 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AaHIiVRSLmQNmmck3QKXSA4z05V/bMUZKR8LzRVMX8twhRuULxTIWR1Ob8LE8RkIW1VXYYc+zkfM99ZPtFDRQA==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"m", "email"=>"a@yaho.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"7", "strength3"=>"11", "strength4"=>"19", "strength5"=>"1"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+No template found for RegistrationsController#create, rendering head :no_content
+Completed 204 No Content in 202ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 13:01:51 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269307672600 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (0.9ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (32.2ms)
+Completed 200 OK in 125ms (Views: 94.6ms | ActiveRecord: 13.3ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 13:02:14 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"i6YaVFrkDWZ/N6W/wbcZ4YSZcwBWAA0iBSXHHZXkbLz6gslJIaLrW2/jrVnYRJeh0f/39K5SBnzgzRqfNPjiNw==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"ab@c.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"7", "strength3"=>"18", "strength4"=>"7", "strength5"=>"13"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 151ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `errors' for nil:NilClass):
+  
+app/controllers/registrations_controller.rb:48:in `create'
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 13:03:51 -0500
+  
+SyntaxError (/Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/controllers/registrations_controller.rb:48: syntax error, unexpected '<', expecting end
+      <%= @group.errors.full_message...
+      ^
+/Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/controllers/registrations_controller.rb:52: syntax error, unexpected tIDENTIFIER, expecting end
+... self.resource = resource_class.to_adapter.get!(send(:"curre...
+...                 ^~~~~~~~~~~~~~
+/Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/controllers/registrations_controller.rb:103: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/registrations_controller.rb:48: syntax error, unexpected '<', expecting end
+app/controllers/registrations_controller.rb:52: syntax error, unexpected tIDENTIFIER, expecting end
+app/controllers/registrations_controller.rb:103: syntax error, unexpected end-of-input, expecting end
+Started GET "/users/sign_in" for ::1 at 2019-04-28 13:04:40 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 96ms (Views: 75.0ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 13:04:43 -0500
+  
+SyntaxError (/Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/controllers/registrations_controller.rb:48: syntax error, unexpected '<', expecting end
+      <%= @group.errors.full_message...
+      ^
+/Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/controllers/registrations_controller.rb:52: syntax error, unexpected tIDENTIFIER, expecting end
+... self.resource = resource_class.to_adapter.get!(send(:"curre...
+...                 ^~~~~~~~~~~~~~
+/Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/controllers/registrations_controller.rb:103: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/registrations_controller.rb:48: syntax error, unexpected '<', expecting end
+app/controllers/registrations_controller.rb:52: syntax error, unexpected tIDENTIFIER, expecting end
+app/controllers/registrations_controller.rb:103: syntax error, unexpected end-of-input, expecting end
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 13:05:06 -0500
+  
+SyntaxError (/Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/controllers/registrations_controller.rb:48: syntax error, unexpected '<', expecting end
+      <%= @group.errors.full_message...
+      ^
+/Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/controllers/registrations_controller.rb:52: syntax error, unexpected tIDENTIFIER, expecting end
+... self.resource = resource_class.to_adapter.get!(send(:"curre...
+...                 ^~~~~~~~~~~~~~
+/Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/controllers/registrations_controller.rb:103: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/registrations_controller.rb:48: syntax error, unexpected '<', expecting end
+app/controllers/registrations_controller.rb:52: syntax error, unexpected tIDENTIFIER, expecting end
+app/controllers/registrations_controller.rb:103: syntax error, unexpected end-of-input, expecting end
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 13:05:09 -0500
+  
+SyntaxError (/Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/controllers/registrations_controller.rb:48: syntax error, unexpected '<', expecting end
+      <%= @group.errors.full_message...
+      ^
+/Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/controllers/registrations_controller.rb:52: syntax error, unexpected tIDENTIFIER, expecting end
+... self.resource = resource_class.to_adapter.get!(send(:"curre...
+...                 ^~~~~~~~~~~~~~
+/Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/controllers/registrations_controller.rb:103: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/registrations_controller.rb:48: syntax error, unexpected '<', expecting end
+app/controllers/registrations_controller.rb:52: syntax error, unexpected tIDENTIFIER, expecting end
+app/controllers/registrations_controller.rb:103: syntax error, unexpected end-of-input, expecting end
+Started GET "/" for ::1 at 2019-04-28 13:05:30 -0500
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-04-28 13:05:30 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 123ms (Views: 89.3ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/" for ::1 at 2019-04-28 13:05:31 -0500
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-04-28 13:05:31 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 107ms (Views: 105.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 13:05:34 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269306326860 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (45.1ms)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 7.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    146: 
+    147:       </div>
+    148:       </section><!-- #call-to-action -->
+    149: <%= @group.errors.full_messages.first if @group.errors.any? %>
+    150: </main>
+    151: 
+    152: <!--==========================
+  
+app/views/registrations/new.html.erb:149:in `_app_views_registrations_new_html_erb__4085256756952478303_70269306326860'
+app/controllers/registrations_controller.rb:3:in `new'
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 13:06:31 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269308818680 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 79ms (Views: 77.7ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 13:17:54 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I9rouV/6KdrZWdy6+kmMT0mrYKQ+WjfRME2FMOeFiwdS/jukJLzP58mN1FzjugIPHM3kUMYIPI/VpViyRpkFjA==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@yaho.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"5", "strength3"=>"2", "strength4"=>"25", "strength5"=>"9"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+No template found for RegistrationsController#create, rendering head :no_content
+Completed 204 No Content in 208ms (ActiveRecord: 5.0ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 13:20:48 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I9rouV/6KdrZWdy6+kmMT0mrYKQ+WjfRME2FMOeFiwdS/jukJLzP58mN1FzjugIPHM3kUMYIPI/VpViyRpkFjA==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@yaho.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"5", "strength3"=>"2", "strength4"=>"25", "strength5"=>"9"}}
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+No template found for RegistrationsController#create, rendering head :no_content
+Completed 204 No Content in 189ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 13:23:34 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269306308320 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 98ms (Views: 74.2ms | ActiveRecord: 5.0ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 13:23:50 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3R/O1G1HZhD89g1SQTT+cdikIzrOdN+m/Twp9MHezJesOx3JFgGALewiBbRYx3AxjcKnzjYm1PgY1PR2YMJCHA==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@d.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"5", "strength3"=>"7", "strength4"=>"31", "strength5"=>"14"}}
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Completed 204 No Content in 156ms (ActiveRecord: 6.2ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 13:30:46 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3R/O1G1HZhD89g1SQTT+cdikIzrOdN+m/Twp9MHezJesOx3JFgGALewiBbRYx3AxjcKnzjYm1PgY1PR2YMJCHA==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@d.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"5", "strength3"=>"7", "strength4"=>"31", "strength5"=>"14"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Completed 204 No Content in 144ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 13:33:26 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269311051360 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 82ms (Views: 80.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 13:33:44 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HskfyX+jWvTPC2RD7yQMyA+U/oitHqYy9Bq9LLQfCRJv7czUBOW8yd/fbKX214KIWvJ6fFVMrWwR8mCuFQOHmQ==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@ya.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"5", "strength3"=>"11", "strength4"=>"11", "strength5"=>"7"}}
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Completed 204 No Content in 141ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 13:34:33 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269309148360 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 118ms (Views: 116.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 13:34:52 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o9n+SapeC8Xc01MXQIbz+EGM1S9yK0tjMyg/emZg/pbS/S1U0Rjt+MwHW/FZdX24FOpR24p5QD3WwOL4x3xwHQ==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"5", "strength3"=>"13", "strength4"=>"26", "strength5"=>"25"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Completed 204 No Content in 144ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 13:35:44 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269305698300 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 68ms (Views: 66.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 13:36:01 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kD1dJ+hJp3k5G3nOBK+mEnjTaOijOCBLp9p5cdvuSoXhGY46kw9BRCnPcSgdXChSLbXsHFtqKxVCMqTzevLEDg==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"as@b.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"5", "strength3"=>"7", "strength4"=>"11", "strength5"=>"25"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Completed 204 No Content in 142ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 13:37:13 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269307549600 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (0.8ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 76ms (Views: 74.4ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 13:37:28 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v7GtOA+FCF59gRsNRqvD4kh9n2Xx0ZkCegQw7lAHNBbOlX4ldMPuY21VE+tfWE2iHRsbkQmDklyf7O1s8Ru6nQ==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"a@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"5", "strength3"=>"7", "strength4"=>"33", "strength5"=>"9"}}
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Completed 204 No Content in 142ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 13:41:25 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269312144020 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (0.5ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (11.5ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `code' for nil:NilClass):
+    203: 
+    204:   $("#checkout").on("click", function validatePassword() {
+    205:     $("#call-to-action").submit();
+    206:     var real_code = '<%=@group.code%>';
+    207:     var user_code = document.getElementById('#user_code');
+    208:   if (real_code != user_code)
+    209:   user_code.setCustomValidity("yo");
+  
+app/views/registrations/new.html.erb:206:in `_app_views_registrations_new_html_erb__4085256756952478303_70269312144020'
+app/controllers/registrations_controller.rb:3:in `new'
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 13:43:03 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269296973460 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (1.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 80ms (Views: 77.9ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 13:43:20 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SkPwRMzDKrPvB81kWvguJs1gKziy6nrPW/oSiXZHPq07ZyNZt4XMjv/TxYJDC6BmmAavzEq4cZG+Es8L11uwJg==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@y.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"7", "strength3"=>"11", "strength4"=>"25", "strength5"=>"9"}}
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Completed 204 No Content in 145ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 13:49:33 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269311070020 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (0.5ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 81ms (Views: 79.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 13:49:48 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O0TMKiefvX5wlWbTI7TXch4dpXpkcS9y1meYZJPIvS1KYB83XNlbQ2BBbjU6R1kyS3shjpwjJCwzj0XmMtQzpg==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@g.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"7", "strength3"=>"11", "strength4"=>"8", "strength5"=>"8"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Completed 204 No Content in 143ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 13:51:16 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269312324840 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (0.7ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 101ms (Views: 99.4ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 13:51:30 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ITKQOcsIRgXp0gXe4g9+wdx3llabfvY6sn1ZI3y5P3dQFkMksE6gOPkGDTj7/PCBiRESomMs/WRXlYSh3aWx/A==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"7", "strength3"=>"11", "strength4"=>"3", "strength5"=>"15"}}
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Completed 204 No Content in 139ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 13:54:00 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269307768220 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (31.9ms)
+Completed 200 OK in 131ms (Views: 100.8ms | ActiveRecord: 13.8ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 13:54:17 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PjL7cnqHMQZskh3seSdT3awN5jK6b3NpokUWJrQf3SFPFihvAcHXO3xGFQpg1N2d+WtixkI9eDdHrcukFQNTqg==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@d.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"15", "strength2"=>"3", "strength3"=>"12", "strength4"=>"8", "strength5"=>"8"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Redirected to 
+Completed 500 Internal Server Error in 352ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `users_url' for #<RegistrationsController:0x00007fd1adb87bb8>
+Did you mean?  user_session_url):
+  
+app/controllers/registrations_controller.rb:3:in `new'
+app/controllers/registrations_controller.rb:47:in `create'
+Started POST "/users" for ::1 at 2019-04-28 13:56:26 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PjL7cnqHMQZskh3seSdT3awN5jK6b3NpokUWJrQf3SFPFihvAcHXO3xGFQpg1N2d+WtixkI9eDdHrcukFQNTqg==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"7", "strength3"=>"11", "strength4"=>"3", "strength5"=>"15"}}
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 410ms (ActiveRecord: 12.4ms)
+
+
+  
+NameError (undefined local variable or method `users_url' for #<RegistrationsController:0x00007fd1b0e3af60>
+Did you mean?  user_session_url):
+  
+app/controllers/registrations_controller.rb:47:in `create'
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 13:57:43 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269307421000 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (28.8ms)
+Completed 200 OK in 113ms (Views: 85.5ms | ActiveRecord: 5.8ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 13:57:59 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wyUlo1imn2tJ1LwwywW3H15TZl0p1yJXnwF09cAX13eyAfa+I+B5VlkAtNbS9jlfCzXiqdGFKQl66al3YQtZ/A==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@d.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"7", "strength3"=>"11", "strength4"=>"7", "strength5"=>"2"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_up?admin=false
+Completed 302 Found in 154ms (ActiveRecord: 5.6ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 13:58:00 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269311644920 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 77ms (Views: 75.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 13:58:53 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EDPVc2HbieLy09/erS4U33QeeYBUSXSmCA+l+17smARhFwZuGp1v3+IH1zi03ZqfIXj9dKwbf/jt53h5//AWjw==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@d.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"7", "strength3"=>"5", "strength4"=>"11", "strength5"=>"5"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_up?admin=false
+Completed 302 Found in 141ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 13:58:53 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269309521160 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (0.8ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 104ms (Views: 102.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:25:15 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269269958340 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:91)
+  [1m[36mStrength Load (0.7ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 103ms (Views: 79.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:26:24 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269308621940 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:94)
+  [1m[36mStrength Load (0.7ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 73ms (Views: 71.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 14:26:41 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c2Jdo0GH5/8V9csxex4/aUB/69EPPNG7oaCNiQfD+PgCRo6+OsEBwgUhw9di7bEpFRlvJfdu2uVESFALpt92cw==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"v", "email"=>"c@d.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"15", "strength2"=>"7", "strength3"=>"26", "strength4"=>"33", "strength5"=>"8"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_up?admin=false
+Completed 302 Found in 149ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:26:41 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269295699580 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:94)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.1ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.1ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.1ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 116ms (Views: 89.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:26:56 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269297066060 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:94)
+  [1m[36mStrength Load (1.1ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 87ms (Views: 85.2ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 14:27:10 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swO3igep4qpgRhcw12WVsOKgHFRg4KmtRrLZtGEZWZDCJ2SXfO8El3CSH9bOlhvwt8aYoJiyovOjWgQ2wAXXGw==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@d.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"7", "strength3"=>"22", "strength4"=>"20", "strength5"=>"7"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_up?admin=false
+Completed 302 Found in 136ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:27:10 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269269701000 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:94)
+  [1m[36mStrength Load (0.5ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 81ms (Views: 79.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:27:26 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269293779960 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:94)
+  [1m[36mStrength Load (0.7ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 95ms (Views: 78.8ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 14:27:42 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b4/1Mf0hMseUclmc+dFIGmk+QpEGFvAJQJ+boUTUwWceqyYshmfU+oSmUXrgIsZaPFjGZf5E+1eld0Yj5chP7A==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@d.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"22", "strength3"=>"25", "strength4"=>"27", "strength5"=>"7"}}
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+No template found for RegistrationsController#create, rendering head :no_content
+Completed 204 No Content in 204ms (ActiveRecord: 5.4ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:28:47 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269310821440 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:94)
+  [1m[36mStrength Load (0.5ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 65ms (Views: 63.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:29:02 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269308569700 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:94)
+  Rendered /Users/Austin/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (1.9ms)
+  [1m[36mStrength Load (0.7ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 70ms (Views: 68.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:30:13 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (628.9ms)
+Completed 500 Internal Server Error in 631ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `head' for #<#<Class:0x00007fd1b0938080>:0x00007fd1af9386a8>
+Did you mean?  headers):
+    79:           <% if params[:admin] == 'true' %>
+    80:             <h3 class="cta-title">Register for an Educator Account</h3>
+    81:             <p class="cta-text"></p>
+    82:             <% elsif head == no_content %>
+    83:             <h3 class="cta-title">Register for an Student Account</h3>
+    84:             <p class="cta-text"> WRONG GROUP CODE</p>
+    85:           <% else %>
+  
+app/views/registrations/new.html.erb:82:in `_app_views_registrations_new_html_erb__4085256756952478303_70269258854260'
+app/controllers/registrations_controller.rb:3:in `new'
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:30:29 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (699.1ms)
+Completed 500 Internal Server Error in 704ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `head' for #<#<Class:0x00007fd1b0938080>:0x00007fd1b284bcd8>
+Did you mean?  headers):
+    79:           <% if params[:admin] == 'true' %>
+    80:             <h3 class="cta-title">Register for an Educator Account</h3>
+    81:             <p class="cta-text"></p>
+    82:             <% elsif head == :no_content %>
+    83:             <h3 class="cta-title">Register for an Student Account</h3>
+    84:             <p class="cta-text"> WRONG GROUP CODE</p>
+    85:           <% else %>
+  
+app/views/registrations/new.html.erb:82:in `_app_views_registrations_new_html_erb__4085256756952478303_70269309963040'
+app/controllers/registrations_controller.rb:3:in `new'
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:31:56 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (674.3ms)
+Completed 500 Internal Server Error in 678ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `t1' for #<#<Class:0x00007fd1b0938080>:0x00007fd1accf6fb8>
+Did you mean?  t):
+    79:           <% if params[:admin] == 'true' %>
+    80:             <h3 class="cta-title">Register for an Educator Account</h3>
+    81:             <p class="cta-text"></p>
+    82:             <% elsif t1 == 1 %>
+    83:             <h3 class="cta-title">Register for an Student Account</h3>
+    84:             <p class="cta-text"> WRONG GROUP CODE</p>
+    85:           <% else %>
+  
+app/views/registrations/new.html.erb:82:in `_app_views_registrations_new_html_erb__4085256756952478303_70269262078200'
+app/controllers/registrations_controller.rb:3:in `new'
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:32:14 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269294987500 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:94)
+  [1m[36mStrength Load (0.7ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (28.2ms)
+Completed 200 OK in 128ms (Views: 97.8ms | ActiveRecord: 11.4ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 14:32:28 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sf85th7VkZCfvh4ZtCNsA5qwZPKP2oWrJTPOmWznxfLA2+qrZZN3rY9qFv+t0OJDz9bgBneIjvXA2xMbzftLeQ==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@d.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"7", "strength3"=>"11", "strength4"=>"21", "strength5"=>"3"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+No template found for RegistrationsController#create, rendering head :no_content
+Completed 204 No Content in 191ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:32:46 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269262223140 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:94)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 83ms (Views: 56.3ms | ActiveRecord: 11.2ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 14:32:58 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EiMQPlwKj/A9QEDIdaWuy45Htkd47CzD1bR3RIBmffNjB8MjJ0xpzS2USC5sViCL2yEys4C+J50wXKrGIXrzeA==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"f", "email"=>"c@d.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"7", "strength3"=>"11", "strength4"=>"22", "strength5"=>"25"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_up?admin=false
+Completed 302 Found in 140ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:32:58 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269309082420 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:94)
+  [1m[36mStrength Load (0.5ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.1ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 75ms (Views: 73.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:33:21 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (599.8ms)
+Completed 500 Internal Server Error in 603ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `t1' for #<#<Class:0x00007fd1acd31eb0>:0x00007fd1ad9b0a38>
+Did you mean?  t):
+    79:           <% if params[:admin] == 'true' %>
+    80:             <h3 class="cta-title">Register for an Educator Account</h3>
+    81:             <p class="cta-text"></p>
+    82:             <% elsif t1 == 1 %>
+    83:             <h3 class="cta-title">Register for an Student Account</h3>
+    84:             <p class="cta-text"> WRONG GROUP CODE</p>
+    85:           <% else %>
+  
+app/views/registrations/new.html.erb:82:in `_app_views_registrations_new_html_erb__4085256756952478303_70269268777320'
+app/controllers/registrations_controller.rb:3:in `new'
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:34:06 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269312652080 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:94)
+  [1m[36mStrength Load (0.7ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (77.3ms)
+Completed 200 OK in 145ms (Views: 119.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 14:34:17 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aAKUNatSre8Vjb4htnshAd7zCZOWZ3iaTLz8DvnYbTQZJkco0BRL0gVZtseviK9Bi5WNZ241c8SpVCGMWMTjvw==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@d.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"25", "strength3"=>"22", "strength4"=>"7", "strength5"=>"11"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_up?admin=false
+Completed 302 Found in 147ms (ActiveRecord: 6.6ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:34:17 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269307460080 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:94)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 51ms (Views: 49.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:34:36 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269312605480 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:94)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 92ms (Views: 77.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 14:34:48 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v5chJOwhsb4EYfokDFMkvh0ENFInQq+xmoHOC8QrZYvOs/I5l2dXgxS18sIVoKr+SGKwpt8QpO9/aROJZTfrAA==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@d.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"25", "strength3"=>"22", "strength4"=>"7", "strength5"=>"11"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_up?admin=false
+Completed 302 Found in 149ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:34:48 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269261262000 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:94)
+  [1m[36mStrength Load (0.5ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 55ms (Views: 53.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:35:28 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269269684020 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:95)
+  [1m[36mStrength Load (0.5ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 54ms (Views: 52.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 14:35:39 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DAFaxahWhuEKuQdq8Q6djnbjRfHWZq5kGF7VNFKGDmF9JYnY0xBg3BptD4zo/RPOI4XBBS40pTr9tgi285qA6g==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@d.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"22", "strength3"=>"7", "strength4"=>"25", "strength5"=>"11"}}
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_up?admin=false
+Completed 302 Found in 134ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:35:39 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269270477620 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:95)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 76ms (Views: 74.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:36:12 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (575.5ms)
+Completed 500 Internal Server Error in 601ms (ActiveRecord: 5.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `t1' for #<#<Class:0x00007fd1acd33490>:0x00007fd1acd3b0a0>
+Did you mean?  t):
+    84:             <p class="cta-text"> Use the unique code provided by your instructor to sign up for an educational
+    85:               account and submit your strengths</p>
+    86:           <% end %>
+    87:           <% if t1 == 1 %>
+    88:             <h3 class="cta-title">Register for an Student Account</h3>
+    89:             <p class="cta-text"> WRONG GROUP CODE</p>
+    90:             <% end %>
+  
+app/views/registrations/new.html.erb:87:in `_app_views_registrations_new_html_erb__4085256756952478303_70269262220620'
+app/controllers/registrations_controller.rb:3:in `new'
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:36:21 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269268938540 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:95)
+  [1m[36mStrength Load (1.1ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (29.7ms)
+Completed 200 OK in 110ms (Views: 103.4ms | ActiveRecord: 5.5ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 14:36:32 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qFKzCdh9UQ9KPy0si8jdwIhQhIa6dwUeeFjX7kbi+XLZdmAUozu3MlrrJcqSO1OA3TYAckIlDkCdsAps5/53+Q==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@d.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"25", "strength3"=>"7", "strength4"=>"22", "strength5"=>"11"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_up?admin=false
+Completed 302 Found in 145ms (ActiveRecord: 5.6ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:36:33 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269295892920 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:95)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 57ms (Views: 55.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:36:48 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269311249140 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:95)
+  [1m[36mStrength Load (0.5ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.1ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 54ms (Views: 52.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 14:37:02 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9amzsCvxgYzl8RlM8+H7aCzwXVzs7VQB8CUumQl/5XeEjWCtULdnsfUlEarqEnUoeZbZqBS/X18VzfMbqGNr/A==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@d.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"7", "strength3"=>"25", "strength4"=>"22", "strength5"=>"11"}}
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_up?admin=false
+Completed 302 Found in 141ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:37:02 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269295075640 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:95)
+  [1m[36mStrength Load (0.5ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 75ms (Views: 73.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:37:14 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269311183780 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:95)
+  [1m[36mStrength Load (1.1ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (24.2ms)
+Completed 200 OK in 78ms (Views: 56.4ms | ActiveRecord: 6.3ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 14:37:25 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zXEll9Aib233gJrwQYyja4c0uMj8RjgfYe3ayyR3V3a8VfaKq2SJUOdUkhZYfy0r0lI8PAQUM0GEBQdJhWvZ/Q==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@d.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"25", "strength3"=>"7", "strength4"=>"22", "strength5"=>"11"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_up?admin=false
+Completed 302 Found in 145ms (ActiveRecord: 6.6ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:37:25 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269296280460 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:95)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (33.6ms)
+Completed 200 OK in 79ms (Views: 77.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:37:45 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269270022800 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:95)
+  [1m[36mStrength Load (0.8ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 98ms (Views: 82.7ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 14:38:01 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oIIiqvvVV8Y+3r75lAXISrNeOa0FmHVtTjuaWIm89C/RpvG3gJOx+y4Kth+N9kYK5ji9Wf3KfjOr00faKKB6pA==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@d.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"25", "strength3"=>"7", "strength4"=>"11", "strength5"=>"22"}}
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_up?admin=false
+Completed 302 Found in 147ms (ActiveRecord: 5.6ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:38:01 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269293890640 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:95)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 55ms (Views: 52.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:38:39 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269307129300 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:94)
+  [1m[36mStrength Load (0.5ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 56ms (Views: 54.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 14:38:48 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gG8KTGEOqIn2W5RJm45HDeKWQKxem2qG4XIt6qYxHnHxS9lRGkhOtOaPnK+CfclNt/DEWKbJYdgEmvBoBy2Q+g==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@d.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"25", "strength3"=>"22", "strength4"=>"7", "strength5"=>"11"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_up?admin=false
+Completed 302 Found in 138ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:38:48 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269309488300 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:94)
+  [1m[36mStrength Load (0.5ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 73ms (Views: 71.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:39:21 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269269716420 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:94)
+  [1m[36mStrength Load (0.7ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (23.8ms)
+Completed 200 OK in 113ms (Views: 83.3ms | ActiveRecord: 11.5ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 14:39:32 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SGAql/1pws4+hmc2O9glZjpXx8CY6fzvNQagsCOVTA85RPmKhi8k8y5Sb9AiK6smbzFDNGC797HQ7n0ygonChA==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@d.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"25", "strength3"=>"7", "strength4"=>"22", "strength5"=>"11"}}
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_up?admin=false
+Completed 302 Found in 141ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:39:32 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269288193740 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:94)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 55ms (Views: 53.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:40:25 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269312601540 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:94)
+  [1m[36mStrength Load (0.7ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 99ms (Views: 81.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 14:40:34 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iCwY3W7VNzjbRfL3RCZCc7bZw6dzVSw0CAABIduP9Tz5CMvAFZPRBcuR+hFd1cwz479HU4sHJ2rt6NyjepN7tw==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@d.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"25", "strength3"=>"7", "strength4"=>"22", "strength5"=>"11"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+No template found for RegistrationsController#create, rendering head :no_content
+Completed 204 No Content in 195ms (ActiveRecord: 6.2ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:40:47 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269311996400 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:94)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (25.1ms)
+Completed 200 OK in 116ms (Views: 87.4ms | ActiveRecord: 12.7ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 14:40:55 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ezlYp+QfdnXdnLxuLArNcKDhK8Bo5ylxb1KIhkkDhTIKHYu6n1mQSM1ItIg1+UMw9YevNJC1Ii+KulUE6B8LuQ==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@d.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"25", "strength3"=>"7", "strength4"=>"22", "strength5"=>"11"}}
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_up?admin=false
+Completed 302 Found in 141ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:40:55 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269269666960 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:94)
+  [1m[36mStrength Load (0.5ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 106ms (Views: 105.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:41:14 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269306598220 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:94)
+  [1m[36mStrength Load (1.3ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.2ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (50.5ms)
+Completed 200 OK in 181ms (Views: 177.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:41:15 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269268933480 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:94)
+  [1m[36mStrength Load (0.7ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 103ms (Views: 101.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:45:11 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269309614260 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:94)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 96ms (Views: 81.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 14:45:27 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X9LmhBrg762oc5gc5ONFn7SDvsy5pvaG3EUNUURL0twu9jWZYaYJkLinkPr9EMvf4eU6OEH0/dg5rdDT5VdcVw==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@d.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"25", "strength3"=>"7", "strength4"=>"22", "strength5"=>"11"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_up?admin=false
+Completed 302 Found in 151ms (ActiveRecord: 5.9ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:45:27 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269309962320 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:94)
+  [1m[36mStrength Load (0.5ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 55ms (Views: 53.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:46:15 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269288319300 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:94)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 80ms (Views: 64.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 14:46:25 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tbuycqbwSMNhdc2VucODzkOervDiSbw4WyShl8CYIjLEn2Fv3bau/nGhxXOgMA2OFvgqBBobt2a+zHwVYYSsuQ==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@d.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"7", "strength3"=>"25", "strength4"=>"22", "strength5"=>"11"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+No template found for RegistrationsController#create, rendering head :no_content
+Completed 204 No Content in 200ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:46:39 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269312727960 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:94)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (51.9ms)
+Completed 200 OK in 122ms (Views: 94.8ms | ActiveRecord: 12.2ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 14:46:50 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K0rbPIjUC7bnYF5L9FoqGTjKzvmnchITVMKNodvk3X1abggh85Lti/e0Vq3tqaRZbaxKDV8gGU2xKlAjevhT9g==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@d.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"25", "strength3"=>"11", "strength4"=>"22", "strength5"=>"7"}}
+  [1m[36mGroup Load (1.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_up?admin=false
+Completed 302 Found in 142ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:46:50 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269261716620 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:94)
+  [1m[36mStrength Load (0.5ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (25.8ms)
+Completed 200 OK in 152ms (Views: 150.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:47:03 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269312424320 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:94)
+  [1m[36mStrength Load (0.5ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (56.2ms)
+Completed 200 OK in 105ms (Views: 101.7ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 14:47:15 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"V/t+UXVLkoybNU3l/kBeLmn7VnI1mmRK6qTt8/ogmWom361MDg10sYvhRQPns9BuPJ3Shs3IbxQPTDBxWzwX4Q==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@d.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"25", "strength3"=>"7", "strength4"=>"11", "strength5"=>"10"}}
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_up?admin=false
+Completed 302 Found in 138ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:47:15 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269310651520 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:94)
+  [1m[36mStrength Load (0.5ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 59ms (Views: 58.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:48:03 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269268707380 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:94)
+  [1m[36mStrength Load (0.7ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (23.6ms)
+Completed 200 OK in 86ms (Views: 59.8ms | ActiveRecord: 11.8ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 14:48:15 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fxPe6tkYh0QhJk665Js5mSGMdl1BAzamKLLvnCadVvsONw33ol5heTHyRlz9aLfZdOryqblRPfjNWjIeh4HYcA==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@d.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"7", "strength3"=>"22", "strength4"=>"25", "strength5"=>"11"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_up?admin=false
+Completed 302 Found in 147ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:48:15 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269262275900 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:94)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 77ms (Views: 75.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:49:35 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269305778600 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:94)
+  [1m[36mStrength Load (0.7ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 72ms (Views: 56.6ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 14:49:44 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7/ROFRVaBMsjpoPS2wtzieOHG9dmWyecFfjlKXU8/qme0J0Ibhzi9jNyizTC+P3JtuGfI54JLMLwEDir1CBwIg==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@d.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"25", "strength3"=>"22", "strength4"=>"7", "strength5"=>"11"}}
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_up?admin=false
+Completed 302 Found in 149ms (ActiveRecord: 5.6ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:49:44 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269322796520 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:94)
+  [1m[36mStrength Load (0.5ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 54ms (Views: 53.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:49:59 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (623.6ms)
+Completed 500 Internal Server Error in 626ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `t1' for #<#<Class:0x00007fd1b2094d50>:0x00007fd1b41d3cf0>
+Did you mean?  t):
+    79:           <% if params[:admin] == 'true' %>
+    80:             <h3 class="cta-title">Register for an Educator Account</h3>
+    81:             <p class="cta-text"></p>
+    82:             <% elsif t1 == 1 %>
+    83:             <h3 class="cta-title">Register for an Student Account</h3>
+    84:             <p class="cta-text"> WRONG GROUP CODE</p>
+    85:           <% else %>
+  
+app/views/registrations/new.html.erb:82:in `_app_views_registrations_new_html_erb__4085256756952478303_70269323351360'
+app/controllers/registrations_controller.rb:3:in `new'
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:51:05 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269332272560 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:94)
+  [1m[36mStrength Load (1.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 75ms (Views: 58.5ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 14:51:14 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ceRm4fDbTYvbLm0UvxKR7acf1x1QZbr5ogCoC51nGJEAwLX8i52rtsv6ZfKm4R+t8nlT6ag3sadH6HWJPHuWGg==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@d.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"25", "strength3"=>"7", "strength4"=>"22", "strength5"=>"11"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_up?admin=false
+Completed 302 Found in 145ms (ActiveRecord: 6.1ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:51:14 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269311356640 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:94)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 58ms (Views: 56.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:52:10 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269288642980 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:96)
+  [1m[36mStrength Load (0.5ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 108ms (Views: 107.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 14:52:20 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ki08llIJ+UczclX+lGI0PhS+2sysYHS4C15b1bNkMHrjCe+LKU8feiOmXRiNkbp+QdheOFQyf+butoZXEni+8Q==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@d.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"25", "strength3"=>"7", "strength4"=>"22", "strength5"=>"11"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_up?admin=false
+Completed 302 Found in 138ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:52:20 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269262087460 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:96)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 53ms (Views: 52.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:52:38 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269309196980 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:96)
+  [1m[36mStrength Load (0.7ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 56ms (Views: 54.9ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 14:52:50 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F3EZRSbrLk7hRlOvYJmsriMiGW4M+QRoh9ps7eECOfBmVcpYXa3Ic/GSW0l5aiLudkSdmvSrDzZiMrFvQB63ew==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@d.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"25", "strength3"=>"7", "strength4"=>"22", "strength5"=>"11"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_up?admin=false
+Completed 302 Found in 140ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:52:50 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269271272540 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:96)
+  [1m[36mStrength Load (0.5ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 55ms (Views: 53.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 14:54:49 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kkCWvUmRYqj4R7DavOT5doR8LbsGa7nQ/BCX070u+yfjZEWgMteEleiTuDylF3c20RqpT/45so4Z+EpRHDJ1rA==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@d.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"25", "strength3"=>"7", "strength4"=>"22", "strength5"=>"11"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_up?admin=false
+Completed 302 Found in 134ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:54:49 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269333887100 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:95)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 53ms (Views: 51.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:55:48 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (631.7ms)
+Completed 500 Internal Server Error in 634ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `head' for #<#<Class:0x00007fd1b52ddb90>:0x00007fd1b45b46a8>
+Did you mean?  headers):
+    80:           <% if params[:admin] == 'true' %>
+    81:             <h3 class="cta-title">Register for an Educator Account</h3>
+    82:             <p class="cta-text"></p>
+    83:             <% elsif head[:no_content] == 'true' %>
+    84:             <h3 class="cta-title">Register for an Student Account</h3>
+    85:             <p class="cta-text"> WRONG GROUP CODE</p>
+    86:           <% else %>
+  
+app/views/registrations/new.html.erb:83:in `_app_views_registrations_new_html_erb__4085256756952478303_70269325408760'
+app/controllers/registrations_controller.rb:3:in `new'
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:56:27 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (781.4ms)
+Completed 500 Internal Server Error in 784ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `head' for #<#<Class:0x00007fd1b52ddb90>:0x00007fd1acd13528>
+Did you mean?  headers):
+    80:           <% if params[:admin] == 'true' %>
+    81:             <h3 class="cta-title">Register for an Educator Account</h3>
+    82:             <p class="cta-text"></p>
+    83:             <% elsif head[:no_content] %>
+    84:             <h3 class="cta-title">Register for an Student Account</h3>
+    85:             <p class="cta-text"> WRONG GROUP CODE</p>
+    86:           <% else %>
+  
+app/views/registrations/new.html.erb:83:in `_app_views_registrations_new_html_erb__4085256756952478303_70269262139020'
+app/controllers/registrations_controller.rb:3:in `new'
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:56:37 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (312.3ms)
+Completed 500 Internal Server Error in 315ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `head' for #<#<Class:0x00007fd1b52ddb90>:0x00007fd1adca1120>
+Did you mean?  headers):
+    80:           <% if params[:admin] == 'true' %>
+    81:             <h3 class="cta-title">Register for an Educator Account</h3>
+    82:             <p class="cta-text"></p>
+    83:             <% elsif head :no_content %>
+    84:             <h3 class="cta-title">Register for an Student Account</h3>
+    85:             <p class="cta-text"> WRONG GROUP CODE</p>
+    86:           <% else %>
+  
+app/views/registrations/new.html.erb:83:in `_app_views_registrations_new_html_erb__4085256756952478303_70269270318840'
+app/controllers/registrations_controller.rb:3:in `new'
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:56:47 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:83: syntax error, unexpected ':', expecting then or ';' or '\n'
+...eeze;             elsif @head :no_content 
+...                              ^):
+  
+app/views/registrations/new.html.erb:83: syntax error, unexpected ':', expecting then or ';' or '\n'
+app/controllers/registrations_controller.rb:3:in `new'
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:57:37 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269310617540 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:95)
+  [1m[36mStrength Load (0.5ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 58ms (Views: 56.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:58:48 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269308930320 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:95)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 107ms (Views: 104.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 14:58:59 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RmGllQQhdZfmmTv0+KRhCoDuPH70oNzuyM3w22VF6G03RXaIf2eTqvZNMxLhV+9K1Yi4igzy17AtJS1ZxFlm5g==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@d.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"25", "strength3"=>"7", "strength4"=>"22", "strength5"=>"11"}}
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_up?admin=false
+Completed 302 Found in 140ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 14:58:59 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269296204360 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:95)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 53ms (Views: 51.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 15:01:32 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269322803500 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:95)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 72ms (Views: 56.8ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 15:01:49 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IOI+4S5L8kS3bgPJBoeFC2OSXbH/5BRAXFU6FGRv+R5Rxu38VQ0Ueae6Cy8fdAtLNvTZRQe2Hx65veeWxXN3lQ==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@d.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"25", "strength3"=>"7", "strength4"=>"5", "strength5"=>"1"}}
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_up?admin=false
+Completed 302 Found in 150ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 15:01:49 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269331107960 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:95)
+  [1m[36mStrength Load (0.8ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 55ms (Views: 53.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 15:01:56 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269312842700 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:95)
+  [1m[36mStrength Load (0.6ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 107ms (Views: 93.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for ::1 at 2019-04-28 15:02:09 -0500
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h1CKfrOWQyvzpSggKoJDPY/mca7Dzgw3cOpf4PNuDB72dFljyNClFuNxIMYzcc192oD1WjucB2mVAoJiUnKClQ==", "user"=>{"admin"=>"false", "first_name"=>"a", "last_name"=>"b", "email"=>"c@d.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "code"=>"asdfasdf", "strength1"=>"1", "strength2"=>"25", "strength3"=>"7", "strength4"=>"22", "strength5"=>"11"}}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."code" = $1 ORDER BY "groups"."id" ASC LIMIT $2[0m  [["code", "asdfasdf"], ["LIMIT", 1]]
+No template found for RegistrationsController#create, rendering head :no_content
+Completed 204 No Content in 194ms (ActiveRecord: 6.3ms)
+
+
+Started GET "/users/sign_up?admin=false" for ::1 at 2019-04-28 15:04:40 -0500
+Processing by RegistrationsController#new as HTML
+  Parameters: {"admin"=>"false"}
+  Rendering registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_registrations_new_html_erb__4085256756952478303_70269262355700 at /Users/Austin/Documents/GitHub/CS3398-Romulans-S2019/app/views/registrations/new.html.erb:92)
+  [1m[36mStrength Load (0.7ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  [1m[36mCACHE Strength Load (0.0ms)[0m  [1m[34mSELECT "strengths".* FROM "strengths" ORDER BY "strengths"."name" ASC[0m
+  Rendered registrations/new.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 84ms (Views: 54.5ms | ActiveRecord: 12.2ms)
+
+
