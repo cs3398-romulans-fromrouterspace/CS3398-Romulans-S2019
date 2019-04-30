@@ -36,3 +36,4 @@ William:
 
 Anne:
     Updated Add New Group form to better reflect color scheme of website.  May add further changes, such as changing the background color to match that of main front page.  Chose the indigo portion of the TeamSort logo color to alter the title bar of the modal popup window.  
+    In Sprint 3 Anne created a CSV file without fake student accounts (student1 - student30) and fake passwords.  The import and export of user accounts allowed us to practice manipulating the database.  Working with encryption presented an issue with making full use of the practice table, and would be interest of further study and tasks.
