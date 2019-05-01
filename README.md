@@ -32,7 +32,9 @@ Hollie:
 William:
     Messed around with the UI appearance of the log in button, and made it slightly bigger in size. Also messed around with background color, but no changes were pushed as the color wasn't yet decided by the team. A majority amount of this sprint's time frame was spent around learning ruby, and getting a working environment set up on Windows. Future steps will include modifying the UI further, upon team vote.
 
-    For the 500.html page, under team_sort/public/500.html (for reference) the font for the page was changed from Arial, sans-serif to Tahoma, sans-serif. The background color was changed from a dramatic red background #00FF00 to a more eye-appealing #00FFFF light blue.
+    For Sprint 2, the 500.html page was changed, under team_sort/public/500.html (for reference) the font for the page was changed from Arial, sans-serif to Tahoma, sans-serif. The background color was changed from a dramatic red background #00FF00 to a more eye-appealing #00FFFF light blue.
+    
+    For Sprint 3, I focused on finding a free strengths taking quiz instead of the $20 relied upon 3rd party strengths test we usually use, and found an acceptable replacement for other students to use. The site is: high5test.com This site awards strengths that are similar enough in name to the input strengths that users can attempt our website with the strengths given. The site was tested, giving me the following page: https://high5test.com/test/main-test-result/MTc1NzY3/ (I am hoping this test can be shared publically so the proof can be seen) I did not actually modify code for the project, so I do not have a branch or filepath to share. 
 
 Anne:
     Updated Add New Group form to better reflect color scheme of website.  May add further changes, such as changing the background color to match that of main front page.  Chose the indigo portion of the TeamSort logo color to alter the title bar of the modal popup window.  
