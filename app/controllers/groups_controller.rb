@@ -71,7 +71,6 @@ class GroupsController < ApplicationController
 
   def run_sort
     @group = Group.find(params[:id])
-    byebug
     users = @group.users.where(admin: false)
 
     # remove the user from their team for this group in case we're doing a re-sort
