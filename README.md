@@ -10,7 +10,7 @@ https://www.gallupstrengthscenter.com/product/en-us/10108/top-5-cliftonstrengths
 TeamSort does the rest of the work.
 
 ## Getting the code running.
-To get the code running you need to have ruby on rails installed as well as a database management system (dbms) installed. These can vary based on the OS you are using. Once everything is installed and your dbms is up and running on a localhost or server, start up the rails application and you can navigate the TeamSort site. Happy Sharing :)
+The code is currently running on  http://68.183.153.53/users/sign_in, but after 5/9/2019 will be taken down. Then to run the code you will need to run it locally using puma. To do this you need to have ruby installed and all of the bundle dependencies. The from the CS3398-Romulans-S2019 folder simply type rails s and this will host it loccaly on localhost:3000. 
 
 ## Team Accomplishments
 
