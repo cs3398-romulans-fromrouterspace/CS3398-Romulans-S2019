@@ -41,9 +41,10 @@ William:
 Anne:
     Updated Add New Group form to better reflect color scheme of website.  May add further changes, such as changing the background color to match that of main front page.  Chose the indigo portion of the TeamSort logo color to alter the title bar of the modal popup window.  
     Used principles from Sprint 1, but instead of HTML, used CSS to apply changes to ALL modal boxes in the dashboard.  The following filepaths contain the changes, within the first few lines of the file:
-    app/views/groups/edit.html.erb
-    app/views/groups/generate_teams.html.erb
-    app/views/groups/_form.html.erb
-    Before the modal box popups were all plain white boxes and not reflective of the theme of the website.  After the changes, the background and text of the boxes were changed to icy blue and indigo.  This streamed aesthetics together, making the user experience smoother overall.
-    A modal box has 3 parts: head, body, and foot.  Each of these were updated to the same backgrounds as the website with hex colors.  Then the font was updated with HTML tags.  For example, in line 15 of the last file shows how the font was updated to reflect the website's overall style.
+    
+- app/views/groups/edit.html.erb
+- app/views/groups/generate_teams.html.erb
+- app/views/groups/_form.html.erb
+
+    A modal box has 3 parts: head, body, and foot.  Each of these were updated to the same backgrounds as the website with hex colors.  Then the font was updated with HTML tags.  For example, in line 15 of the last file shows how the font was updated to reflect the website's overall style.  Before the modal box popups were all plain white boxes and not reflective of the theme of the website.  After the changes, the background and text of the boxes were changed to icy blue and indigo.  This streamed aesthetics together, making the user experience smoother overall.
     In Sprint 3 Anne created a CSV file, studUsers.csv, without fake student accounts (student1 - student30) and fake passwords.  The import and export of user accounts allowed us to practice manipulating the database.  Working with encryption presented an issue with making full use of the practice table, and would be interest of further study and tasks.  Filepath> /CS3398-Romulans-S2019/db/studUsers.csv
